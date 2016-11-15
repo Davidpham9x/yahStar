@@ -1,0 +1,29 @@
+/*
+** BUTTONS
+** Please use button- as your CSS class prefix
+*/
+
+.button {
+    border: none;
+    display: inline-block;
+
+    color: #666666;
+    background-color: #fff;
+
+    text-decoration: none;
+    text-transform: capitalize;
+
+    font-size: 16px;
+    padding: 10px 40px;
+    border: 1px solid #cccccc;
+    &:hover {
+    	color: #fff;
+    	background-color: #666666;
+    }
+}
+
+.button--full {}
+
+.button__wrapper {
+	text-align: center;
+}

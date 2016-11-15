@@ -4,10 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>yahStar</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+    <title>YahStar</title>
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <!-- endbower -->
@@ -20,12 +23,303 @@
 </head>
 
 <body>
+    <!-- HEADER -->
+    <header>
+        <div class="row medium-collapse">
+            <div class="small-12 medium-12 columns">
+                <a href="javascript:void(0);" class="icon-menu-bar show-for-small">
+                    <div class="wrap">
+                        <span class="line"></span>
+                    </div>
+                </a>
+                <h1 class="logo">
+                    <a href="" title="YahStar">
+                        <img src="images/global/logo.png" alt="">
+                    </a>
+                </h1>
+                <nav class="main-menu">
+                    <ul class="menu">
+                        <li class="active">
+                            <a href="" title="Celebrity">Celebrity</a>
+                        </li>
+                        <li>
+                            <a href="" title="Event">Event</a>
+                        </li>
+                        <li>
+                            <a href="" title="Video">Video</a>
+                        </li>
+                        <li class="show-for-small">
+                            <a href="" title="Video">Video</a>
+                            <ul class="menu menu--sub">
+                                <li>
+                                    <a href="" title="Create Event">Create Event</a>
+                                </li>
+                                <li>
+                                    <a href="" title="Create YahPage">Create YahPage</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="dropdown menu hide-for-small" data-dropdown-menu>
+                    <li>
+                        <a href="#" title="Register" class="register is-dropdown-submenu-parent opens-right is-active">
+                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>Register
+                        </a>
+                        <ul class="menu">
+                            <li>
+                                <a href="#" title="Create Event">Create Event</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Create YahPage">Create YahPage</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="from from--search">
+                    <form>
+                        <div class="from__field">
+                            <div class="col">
+                                <div class="input-text input-text-1">
+                                    <input type="text" class="txt-search" id="txt-search" name="txt-search" placeholder="Justin">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <a href="javascript:void(0);" class="search--mobile show-for-small">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </header>
 
+    <!-- MAIN: Page Home -->
+    <main class="page page--home">
+        <!-- MASTHEAD -->
+        <section class="masthead" style="background: url('../images/dummy/masthead.jpg') no-repeat; background-size: 100% 100%;">
+            <span class="mask"></span>
+            <div class="row info medium-collapse">
+                <div class="small-12 medium-12 columns">
+                    <h2 class="heading">Now’s Trending Celebrities</h2>
+                </div>
+            </div>
+            <!-- <img src="images/dummy/masthead.jpg" alt=""> -->
+        </section>
+
+        <!-- CELEBRITY -->
+        <section class="celebrity">
+            <div class="row celebrity__row">
+                <div class="small-12 medium-12 large-3 celebrity__info columns">
+                    <div class="celebrity__avatar">
+                        <img src="images/dummy/justin_bieber.jpg" alt="">
+                    </div>
+                    <div class="celebrity__name">
+                        Justin Bieber
+                    </div>
+                    <div class="celebrity__points">
+                        <span class="label">
+                            <i class="fa fa-bolt" aria-hidden="true"></i>
+                            <strong>234.485</strong> Points
+                        </span>
+                    </div>
+                    <div class="highlight hide-for-small">
+                        <span>Trending Last Week</span>
+                    </div>
+                    <div class="celebrity__trending celebrity__trending--last media-object hide-for-small" data-equalizer data-equalize-on="medium">
+                        <div class="media-object-section">
+                            <div class="thumbnail" data-equalizer-watch>
+                                <img src="images/dummy/justin_bieber--trending.jpg">
+                            </div>
+                        </div>
+                        <div class="media-object-section">
+                            <div class="table" data-equalizer-watch>
+                                <div class="table__cell">
+                                    <p>Justin Bieber - What Do You Mean? (Acoustic Version)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="small-12 medium-12 large-9 columns">
+                    <div class="row">
+                        <div class="small-12 medium-4 celebrity__trending--today columns">
+                            <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                <div class="media__img">
+                                    <img class="thumbnail" src="images/dummy/justin_bieber--media.jpg" alt="Photo of Uranus.">
+                                </div>
+                                <div class="media__title">Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...</div>
+                            </a>
+                        </div>
+                        <div class="small-6 medium-4 columns">
+                            <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                <div class="media__img">
+                                    <img class="thumbnail" src="images/dummy/justin_bieber--media.jpg" alt="Photo of Uranus.">
+                                </div>
+                                <div class="media__title">Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...</div>
+                            </a>
+                        </div>
+                        <div class="small-6 medium-4 columns">
+                            <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                <div class="media__img">
+                                    <img class="thumbnail" src="images/dummy/justin_bieber--media.jpg" alt="Photo of Uranus.">
+                                </div>
+                                <div class="media__title">Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="small-12 link__wrapper columns">
+                    <a href="" class="link link--celebrity-page">Visit <strong>Justin Bieber</strong> YahPage <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="row celebrity__row">
+                <div class="small-12 medium-12 large-3 celebrity__info columns">
+                    <div class="celebrity__avatar">
+                        <img src="images/dummy/justin_bieber.jpg" alt="">
+                    </div>
+                    <div class="celebrity__name">
+                        Justin Bieber
+                    </div>
+                    <div class="celebrity__points">
+                        <span class="label">
+                            <i class="fa fa-bolt" aria-hidden="true"></i>
+                            <strong>234.485</strong> Points
+                        </span>
+                    </div>
+                    <div class="highlight hide-for-small">
+                        <span>Trending Last Week</span>
+                    </div>
+                    <div class="celebrity__trending celebrity__trending--last media-object hide-for-small" data-equalizer data-equalize-on="medium">
+                        <div class="media-object-section">
+                            <div class="thumbnail" data-equalizer-watch>
+                                <img src="images/dummy/justin_bieber--trending.jpg">
+                            </div>
+                        </div>
+                        <div class="media-object-section">
+                            <div class="table" data-equalizer-watch>
+                                <div class="table__cell">
+                                    <p>Justin Bieber - What Do You Mean? (Acoustic Version)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="small-12 medium-12 large-9 columns">
+                    <div class="row">
+                        <div class="small-12 medium-4 celebrity__trending--today columns">
+                            <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                <div class="media__img">
+                                    <img class="thumbnail" src="images/dummy/justin_bieber--media.jpg" alt="Photo of Uranus.">
+                                </div>
+                                <div class="media__title">Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...</div>
+                            </a>
+                        </div>
+                        <div class="small-6 medium-4 columns">
+                            <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                <div class="media__img">
+                                    <img class="thumbnail" src="images/dummy/justin_bieber--media.jpg" alt="Photo of Uranus.">
+                                </div>
+                                <div class="media__title">Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...</div>
+                            </a>
+                        </div>
+                        <div class="small-6 medium-4 columns">
+                            <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                <div class="media__img">
+                                    <img class="thumbnail" src="images/dummy/justin_bieber--media.jpg" alt="Photo of Uranus.">
+                                </div>
+                                <div class="media__title">Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="small-12 link__wrapper columns">
+                    <a href="" class="link link--celebrity-page">Visit <strong>Justin Bieber</strong> YahPage <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="row celebrity__row">
+                <div class="small-12 medium-12 large-3 celebrity__info columns">
+                    <div class="celebrity__avatar">
+                        <img src="images/dummy/justin_bieber.jpg" alt="">
+                    </div>
+                    <div class="celebrity__name">
+                        Justin Bieber
+                    </div>
+                    <div class="celebrity__points">
+                        <span class="label">
+                            <i class="fa fa-bolt" aria-hidden="true"></i>
+                            <strong>234.485</strong> Points
+                        </span>
+                    </div>
+                    <div class="highlight hide-for-small">
+                        <span>Trending Last Week</span>
+                    </div>
+                    <div class="celebrity__trending celebrity__trending--last media-object hide-for-small" data-equalizer data-equalize-on="medium">
+                        <div class="media-object-section">
+                            <div class="thumbnail" data-equalizer-watch>
+                                <img src="images/dummy/justin_bieber--trending.jpg">
+                            </div>
+                        </div>
+                        <div class="media-object-section">
+                            <div class="table" data-equalizer-watch>
+                                <div class="table__cell">
+                                    <p>Justin Bieber - What Do You Mean? (Acoustic Version)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="small-12 medium-12 large-9 columns">
+                    <div class="row">
+                        <div class="small-12 medium-4 celebrity__trending--today columns">
+                            <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                <div class="media__img">
+                                    <img class="thumbnail" src="images/dummy/justin_bieber--media.jpg" alt="Photo of Uranus.">
+                                </div>
+                                <div class="media__title">Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...</div>
+                            </a>
+                        </div>
+                        <div class="small-6 medium-4 columns">
+                            <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                <div class="media__img">
+                                    <img class="thumbnail" src="images/dummy/justin_bieber--media.jpg" alt="Photo of Uranus.">
+                                </div>
+                                <div class="media__title">Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...</div>
+                            </a>
+                        </div>
+                        <div class="small-6 medium-4 columns">
+                            <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                <div class="media__img">
+                                    <img class="thumbnail" src="images/dummy/justin_bieber--media.jpg" alt="Photo of Uranus.">
+                                </div>
+                                <div class="media__title">Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="small-12 link__wrapper columns">
+                    <a href="" class="link link--celebrity-page">Visit <strong>Justin Bieber</strong> YahPage <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="button__wrapper">
+                <a href="" title="View More" class="button">View More</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
+        <script src="scripts/foundation.min.js"></script>
     <!-- endbower -->
-        <script src="script/foundation.min.js"></script>
     <!-- endbuild -->
+
+    <script>
+        $(document).ready(function() {
+            $(document).foundation();
+        });
+    </script>
 
     <!-- build:js scripts/plugins.js -->
     <!-- endbuild -->
