@@ -1,4 +1,13 @@
-.modal {}
+.modal {
+    .close {
+        color: #fff;
+        font-size: 1.5em;
+        @include ab ( 5%, n, n, 5% );
+        @include screen ( medium ) {
+            @include ab ( 10%, n, n, 10% );
+        }
+    }
+}
 
 .mfp-bg {
     opacity: 1;
@@ -6,6 +15,67 @@
 }
 .mfp-close {
     display: none!important;
+}
+
+.modal--create-event {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 963px;
+
+    z-index: 2;
+    position: relative;
+
+    >.outer {
+        width: 100%;
+        background: url('../images/modal/modal--create-event-mobile.png') center center no-repeat;
+        background-size: 100% 100%;
+        height: auto;
+        min-height: 628px;
+        @include screen ( medium ) {
+            background: url('../images/modal/modal--create-event.png') center center no-repeat;
+            background-size: 100% 100%;
+            height: 558px;
+        }
+
+        z-index: 3;
+        position: relative;
+
+        .inner {}
+        .hint {
+            color: #666666;
+            font-size: 12px;
+            line-height: normal;
+            padding: 0 5%;
+            @include ab ( 25%, 0, n, n );
+            @include screen ( medium ) {
+                padding: 0 5%;
+                @include ab ( 20%, 12%, n, n );
+            }
+        }
+        .content {
+            padding: 60% 5% 0;
+            @include screen ( medium ) {
+                padding: 10% 11% 0 50%;
+            }
+
+            .form {
+                margin-top: 10px;
+                @include screen ( medium ) {
+                    margin-top: 5px;
+                }
+
+                .form_field {
+                    margin-top: 10px;
+                    @include screen ( medium ) {
+                        margin-top: 15px;
+                    }
+                    &:first-child {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /*

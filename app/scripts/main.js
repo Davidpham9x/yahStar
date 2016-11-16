@@ -32,6 +32,7 @@ var yahStar = window.yahStar || {}; //global namespace for YOUR yahStar, Please 
 
             this.initShowMenuMobile();
             this.initShowSearchMobile();
+            this.initModalCreateEvent();
         },
 
         initShowMenuMobile: function() {
@@ -55,6 +56,29 @@ var yahStar = window.yahStar || {}; //global namespace for YOUR yahStar, Please 
 
                 $(this).toggleClass('active');
                 menuContent.slideToggle('normal');
+            });
+        },
+
+        initModalCreateEvent: function() {
+            $.magnificPopup.open({
+                items: {
+                    src: '#modal--create-event'
+                },
+                type: 'inline',
+                removalDelay: 500, // Delay removal by X to allow out-animation
+                callbacks: {
+                    beforeOpen: function() {
+                        this.st.mainClass = 'mfp-zoom-out';
+                    }
+                },
+                midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+            });
+
+            $('#modal--create-event').find('.close').off('click').on('click', function(e) {
+                e.preventDefault();
+
+                var magnificPopup = $.magnificPopup.instance;
+                magnificPopup.close(); // Close popup that is currently opened
             });
         }
     };

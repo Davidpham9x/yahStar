@@ -16,14 +16,26 @@
     font-size: 16px;
     padding: 10px 40px;
     border: 1px solid #cccccc;
+    @include transition ( all .3s ease-in-out );
     &:hover {
     	color: #fff;
     	background-color: #666666;
     }
 }
+.button--green {
+    color: #fff;
+    border: none;
+    background-color: #89b33d;
+    &:hover {
+        color: #89b33d;
+        background-color: #fff;
+    }
+}
 
 .button--full {}
-
 .button__wrapper {
 	text-align: center;
+}
+.button__wrapper--right {
+    text-align: right;
 }
