@@ -14,6 +14,8 @@
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="/bower_components/magnific-popup/dist/magnific-popup.css" />
+    <link rel="stylesheet" href="/bower_components/EasyAutocomplete/dist/easy-autocomplete.min.css" />
+    <link rel="stylesheet" href="/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css" />
     <!-- endbower -->
         <link rel="stylesheet" href="styles/foundation.min.css">
     <!-- endbuild -->
@@ -96,6 +98,59 @@
         </div>
     </header>
 
+    <!-- Autocomplete:: Celebrity -->
+    <div class="autocomplete">
+        <div class="inner">
+            <ul>
+                <li>
+                    <a href="" title="Justin Bieber">
+                        <div class="wrap-avatar">
+                            <img src="images/dummy/justin_bieber.jpg" alt="Justin Bieber">
+                        </div>
+                        <div class="info">
+                            <strong class="name">Justin Bieber</strong>
+                            <span class="points">
+                                <i class="fa fa-bolt" aria-hidden="true"></i>
+                                <strong>234.485</strong> Points
+                            </span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" title="Justin Timberlake">
+                        <div class="wrap-avatar">
+                            <img src="images/dummy/justin_bieber.jpg" alt="Justin Timberlake">
+                        </div>
+                        <div class="info">
+                            <strong class="name">Justin Timberlake</strong>
+                            <span class="points">
+                                <i class="fa fa-bolt" aria-hidden="true"></i>
+                                <strong>234.485</strong> Points
+                            </span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" title="Justin Theroux">
+                        <div class="wrap-avatar">
+                            <img src="images/dummy/justin_bieber.jpg" alt="Justin Theroux">
+                        </div>
+                        <div class="info">
+                            <strong class="name">Justin Theroux</strong>
+                            <span class="points">
+                                <i class="fa fa-bolt" aria-hidden="true"></i>
+                                <strong>234.485</strong> Points
+                            </span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="more">
+                <a href="" title="Click here to find more result for Justin">Click here to find more result for <strong>Justin</strong></a>
+            </div>
+        </div>
+    </div>
+
     <!-- MAIN: Page Home -->
     <main class="page page--home">
         <!-- MASTHEAD -->
@@ -103,7 +158,103 @@
             <span class="mask"></span>
             <div class="row info medium-collapse">
                 <div class="small-12 medium-12 columns">
-                    <h2 class="heading">Now’s Trending Celebrities</h2>
+                    <h2 class="heading"><strong>Now’s</strong> Trending Celebrities</h2>
+                    <div class="filter">
+                        <ul class="dropdown menu" data-dropdown-menu>
+                            <li>
+                                <a href="#">Language</a>
+                                <ul class="vertical dropdown menu" data-dropdown-menu style="max-width: 300px;">
+                                    <li>
+                                        <a href="#" title="English">
+                                            <span class="language">English</span>
+                                            <span class="countries">213 Countries</span>
+                                        </a>
+                                        <ul class="menu" data-dropdown-menu style="max-height: 300px;">
+                                            <li>
+                                                <a href="" title="All Country">
+                                                    <span class="country">All Country</span>
+                                                    <span class="celebrities">28.394 Celebrity</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" title="U.S.A">
+                                                    <span class="country">U.S.A</span>
+                                                    <span class="celebrities">8.394 Celebrity</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" title="England">
+                                                    <span class="country">England</span>
+                                                    <span class="celebrities">2.394 Celebrity</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" title="Canada">
+                                                    <span class="country">Canada</span>
+                                                    <span class="celebrities">1.394 Celebrity</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" title="Australia">
+                                                    <span class="country">Australia</span>
+                                                    <span class="celebrities">3.394 Celebrity</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" title="New Zealand">
+                                                    <span class="country">New Zealand</span>
+                                                    <span class="celebrities">4.394 Celebrity</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" title="Iceland">
+                                                    <span class="country">Iceland</span>
+                                                    <span class="celebrities">5.394 Celebrity</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Spanish">
+                                            <span class="language">Spanish</span>
+                                            <span class="countries">20 Countries</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Portuguese">
+                                            <span class="language">Portuguese</span>
+                                            <span class="countries">20 Countries</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="France">
+                                            <span class="language">France</span>
+                                            <span class="countries">16 Countries</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Korean">
+                                            <span class="language">Korean</span>
+                                            <span class="countries">2 Countries</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Japanese">
+                                            <span class="language">Japanese</span>
+                                            <span class="countries">2 Countries</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Chinese">
+                                            <span class="language">Chinese</span>
+                                            <span class="countries">5 Countries</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Item 2</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <!-- <img src="images/dummy/masthead.jpg" alt=""> -->
@@ -365,12 +516,12 @@
         </div>
     </div>
 
-
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script> -->
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/magnific-popup/dist/jquery.magnific-popup.js"></script>
+    <script src="/bower_components/EasyAutocomplete/dist/jquery.easy-autocomplete.min.js"></script>
+    <script src="/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
     <!-- endbower -->
     <script src="scripts/foundation.min.js"></script>
     <!-- endbuild -->

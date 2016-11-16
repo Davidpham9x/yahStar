@@ -30,9 +30,10 @@ var yahStar = window.yahStar || {}; //global namespace for YOUR yahStar, Please 
         init: function() { //initialization code goes here
             $.support.cors = true;
 
+            this.initAutocomplete();
             this.initShowMenuMobile();
             this.initShowSearchMobile();
-            this.initModalCreateEvent();
+            /*this.initModalCreateEvent();*/
         },
 
         initShowMenuMobile: function() {
@@ -79,6 +80,18 @@ var yahStar = window.yahStar || {}; //global namespace for YOUR yahStar, Please 
 
                 var magnificPopup = $.magnificPopup.instance;
                 magnificPopup.close(); // Close popup that is currently opened
+            });
+        },
+
+        initAutocomplete: function () {
+            var autocompleteContent = $('.autocomplete');
+
+            $('#txt-search').click(function () {
+                autocompleteContent.show().css({
+                    'top': $(this).offset().top + $(this).outerHeight() + 5,
+                    'left': $(this).offset().left,
+                    'width': $(this).outerWidth()
+                });
             });
         }
     };
