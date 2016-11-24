@@ -53,12 +53,26 @@
 						}
 					}
 				}
-				>.vertical {
+				.vertical {
 					margin-top: 5px;
+					margin-left: 2px;
+
+					li {
+						&:first-child {
+							a {
+								@include border-radius ( 5px, 5px, 0, 0 );
+							}
+						}
+
+						.vertical {
+							overflow-y: auto;
+						}
+					}
 				}
 				.menu {
 					z-index: 2;
 					border: none;
+					/* overflow: hidden; */
 					background-color: #fff;
 					@include border-radius ( 5px, 5px, 5px, 5px );
 					@include box-shadow (  0px, 0, 20px, rgba(0, 0, 0, 0.3) );
@@ -104,6 +118,8 @@
 			@include screen ( medium ) {
 				@include ab ( -30px, n, n, 15px );
 				&:hover {
+					color: #8db647;
+
 					.fa {
 						left: 5px;
 					}

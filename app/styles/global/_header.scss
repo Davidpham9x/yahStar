@@ -257,20 +257,20 @@ header {
 			}
 		}
 		.register {
-			color: #333333;
-			padding: 10px 40px 10px 20px!important;
+			color: #fff;
+			font-size: 14px;
+			padding: 10px 40px 10px 30px!important;
 			position: relative;
-			background-color: #fff;
+			background-color: #8db647;
 			@include transition ( all .2s ease-in-out );
 			@include border-radius( 5px, 5px, 5px, 5px );
 			&:hover {
-				color: #fff;
-				background-color: #8cb73e;
+				background-color: #759d32;
 			}
 			&:before {
 				content: '\f107';
 				font-family: 'FontAwesome';
-				color: #333333;
+				color: #fff;
 				@include ab ( 50%, n, n, 10px );
 				@include transform ( translateY(-50%) );
 			}
