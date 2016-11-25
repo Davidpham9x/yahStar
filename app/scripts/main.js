@@ -33,7 +33,10 @@ var yahStar = window.yahStar || {}; //global namespace for YOUR yahStar, Please 
             this.initAutocomplete();
             this.initShowMenuMobile();
             this.initShowSearchMobile();
-            this.initModalCreateEvent();
+
+            if ( $('.page--home').length ) {
+                yahStar.Global.initModalCreateEvent();
+            }
 
             $(document.body).click(function(e) {
                 if ( $(e.target).hasClass('txt-search') ) {

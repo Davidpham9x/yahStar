@@ -11,6 +11,12 @@ header {
 		background-color: #f9f9f9;
 	}
 
+	>.row {
+		>.columns {
+			position: relative;
+		}
+	}
+
 	.icon-menu-bar {
 		width: 100%;
 		max-width: 60px;
@@ -221,8 +227,8 @@ header {
 		}
 	}
 	.dropdown {
-		float: right;
-		display: block;
+		@include ab ( 50%, n, n, 0 );
+		@include transform ( translateY(-50%) );
 
 		li {
 			&.is-active {

@@ -1,0 +1,142 @@
+.page--events {
+	/** Events **/
+	.events {
+		padding-top: 65px;
+		background-color: #f9f9f9;
+
+		.highlight {
+			margin-top: 20px;
+		}
+		.link--event-details {
+			color: #333333;
+			font-size: 14px;
+			@include screen ( medium ) {
+				@include ab ( -30px, n, n, 15px );
+				&:hover {
+					color: #8db647;
+
+					.fa {
+						left: 5px;
+					}
+				}
+			}
+
+			.fa {
+				left: 0;
+				position: relative;
+				@include transition ( all .3s ease-in-out );
+			}
+		}
+		.link__wrapper {
+			margin-top: 20px;
+			@include screen ( medium ) {
+				margin-top: 0;
+			}
+
+			.link {
+				display: block;
+				padding-top: 10px;
+				border-top: 1px solid rgba(204, 204, 204, 0.5);
+				@include screen ( medium ) {
+					padding-top: 0;
+					border-top: none;
+					display: inline-block;
+				}
+			}
+		}
+		.button__wrapper {
+			margin-top: 40px;
+		}
+	}
+	.events__row {
+		padding: 15px 0;
+		margin-top: 75px;
+		position: relative;
+		background-color: #fff;
+		@include box-shadow( 0px, 0px, 10px, rgba(0, 0, 0, 0.08) );
+		@include screen ( medium ) {
+			padding: 25px 10px 0;
+		}
+		&:first-child {
+			margin-top: 0;
+		}
+
+		.media__img {
+			margin-top: -55px;
+			@include box-shadow( 0px, 0px, 20px, rgba(0, 0, 0, 0.2) );
+
+			img {
+				margin-bottom: 0;
+			}
+		}
+		.info {
+			padding-bottom: 55px;
+			border-bottom: 1px solid #e7e5e5;
+
+			a {
+				display: block;
+
+				h2 {
+					color: #2070ae;
+					font-size: 20px;
+					font-weight: bold;
+					text-transform: capitalize;
+				}
+				span {
+					color: #333333;
+					font-size: 14px;
+				}
+			}
+		}
+		.social {
+			margin: 0 -20px;
+			padding-top: 20px;
+			text-align: center;
+		}
+		.social__name {
+			padding: 0 20px;
+			display: inline-block;
+			vertical-align: middle;
+
+			span {
+				display: block;
+				color: #333333;
+				line-height: normal;
+			}
+			.title {
+				font-size: 12px;
+				font-weight: bold;
+			}
+			.points {
+				margin-top: 5px;
+				font-size: 20px;
+				font-weight: lighter;
+			}
+			.fa {
+				margin-right: 5px;
+			}
+			.fa-bolt {
+				color: #ff6633;
+			}
+			.fa-facebook-official {
+				color: #4c66a4;
+			}
+			.fa-youtube {
+				color: #c4302b;
+			}
+		}
+	}
+	/* .related {} */
+	.related__row {
+		.thumbnail {
+			border: 0;
+		}
+		p {
+			color: #666666;
+			font-size: 12px;
+			line-height: 1.3em;
+
+			margin-bottom: 0;
+		}
+	}
+}
