@@ -8,12 +8,13 @@
     display: inline-block;
 
     color: #666666;
+    font-size: 16px;
     background-color: #fff;
 
     text-decoration: none;
     text-transform: capitalize;
 
-    font-size: 16px;
+    margin: 0;
     padding: 10px 40px;
     border: 1px solid #cccccc;
     @include transition ( all .3s ease-in-out );
@@ -25,10 +26,25 @@
 .button--green {
     color: #fff;
     border: none;
+    position: relative;
     background-color: #89b33d;
+    @include transition ( all .2s ease-in-out );
     &:hover {
         color: #89b33d;
         background-color: #fff;
+        &:before {
+            right: 10px;
+            color: #89b33d;
+        }
+    }
+    &:before {
+        content: '\f105';
+        color: #fff;
+        font-size: 16px;
+        font-family: 'FontAwesome';
+        @include ab ( 50%, n, n, 20px );
+        @include transition ( all .2s ease-in-out );
+        @include transform ( translateY(-50%) );
     }
 }
 

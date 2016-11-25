@@ -4,7 +4,7 @@
         font-size: 1.5em;
         @include ab ( 5%, n, n, 5% );
         @include screen ( medium ) {
-            @include ab ( 10%, n, n, 10% );
+            @include ab ( -5%, n, n, -25px );
         }
     }
 }
@@ -19,51 +19,104 @@
 
 .modal--create-event {
     width: 100%;
-    margin: 0 auto;
-    max-width: 963px;
+    max-width: 775px;
+    margin: 50px auto 0;
 
     z-index: 2;
     position: relative;
+    @include screen ( medium ) {
+        margin: 0 auto;
+    }
+    @include box-shadow ( 0px, 10px, 30px, rgba(0, 0, 0, 0.75) );
 
     >.outer {
         width: 100%;
-        background: url('../images/modal/modal--create-event-mobile.png') center center no-repeat;
+        @include border-radius( 5px, 5px, 5px, 5px );
+        /* background: url('../images/modal/modal--create-event-mobile.png') center center no-repeat;
         background-size: 100% 100%;
-        height: auto;
-        min-height: 628px;
+        min-height: 628px; */
         @include screen ( medium ) {
-            background: url('../images/modal/modal--create-event.png') center center no-repeat;
+            /* background: url('../images/modal/modal--create-event.png') center center no-repeat;
             background-size: 100% 100%;
-            height: 558px;
+            min-height: 558px; */
         }
 
         z-index: 3;
         position: relative;
 
-        .inner {}
+        /* .inner {} */
+        .title {
+            color: #89b33d;
+            font-size: 50px;
+            font-weight: bold;
+            max-width: 50%;
+            line-height: 0.9em;
+            -webkit-text-stroke: 1px #fff;
+            text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+            @include ab ( -30px, 15px, n, n );
+            @include screen ( ipad ) {
+                font-size: 60px;
+                max-width: none;
+            }
+        }
         .hint {
             color: #666666;
             font-size: 12px;
             line-height: normal;
-            padding: 0 5%;
-            @include ab ( 25%, 0, n, n );
-            @include screen ( medium ) {
-                padding: 0 5%;
-                @include ab ( 20%, 12%, n, n );
+            display: block;
+        }
+        .letter {
+            max-width: 50%;
+            @include ab ( n, -5%, -10%, n );
+            @include screen ( ipad ) {
+                max-width: 100%;
+                @include ab ( n, -10%, -15%, n );
             }
         }
         .content {
-            padding: 60% 5% 0;
             @include screen ( medium ) {
-                padding: 10% 11% 0 50%;
+                background-color: #fff;
             }
 
-            .form {
-                margin-top: 10px;
+            .intro {
+                padding: 60px 20px 20px;
+                position: relative;
+                background-color: #fff;
                 @include screen ( medium ) {
-                    margin-top: 5px;
+                    width: 45%;
+                    float: left;
+                    padding: 40px 20px 15px;
+                }
+                @include screen ( ipad ) {
+                    width: 50%;
                 }
 
+                .heading {
+                    width: 50%;
+                    @include screen ( medium ) {
+                        width: 100%;
+                    }
+                }
+                img {
+                    max-width: 50%;
+                    @include ab ( -50px, n, n, 0 );
+                }
+            }
+            .form__wrapper {
+                padding: 20px;
+                background-color: #edf1f5;
+                @include border-radius( 0, 0, 5px, 5px );
+                @include screen ( medium ) {
+                    width: 55%;
+                    float: left;
+                    padding: 40px 20px 15px;
+                    @include border-radius( 0, 5px, 5px, 0 );
+                }
+                @include screen ( ipad ) {
+                    width: 50%;
+                }
+            }
+            .form {
                 .form_field {
                     margin-top: 10px;
                     @include screen ( medium ) {
