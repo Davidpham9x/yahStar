@@ -12,7 +12,10 @@ header {
 	}
 
 	>.row {
+		height: 100%;
+		position: relative;
 		>.columns {
+			height: 100%;
 			position: relative;
 		}
 	}

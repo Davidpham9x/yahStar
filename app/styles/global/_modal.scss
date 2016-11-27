@@ -2,8 +2,8 @@
     .close {
         color: #fff;
         font-size: 1.5em;
-        @include ab ( 5%, n, n, 5% );
-        @include screen ( medium ) {
+        @include ab ( -30px, n, n, 0 );
+        @include screen ( big ) {
             @include ab ( -5%, n, n, -25px );
         }
     }

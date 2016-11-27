@@ -1,8 +1,11 @@
 .page--events {
 	/** Events **/
 	.events {
-		padding-top: 65px;
+		padding-top: 40px;
 		background-color: #f9f9f9;
+		@include screen ( medium ) {
+			padding-top: 75px;
+		}
 
 		.highlight {
 			margin-top: 20px;
@@ -45,58 +48,102 @@
 			}
 		}
 		.button__wrapper {
-			margin-top: 40px;
+			margin-top: 20px;
+			@include screen ( medium ) {
+				margin-top: 40px;
+			}
 		}
 	}
 	.events__row {
-		padding: 15px 0;
-		margin-top: 75px;
+		margin-top: 40px;
+		padding: 0 0 20px;
 		position: relative;
 		background-color: #fff;
 		@include box-shadow( 0px, 0px, 10px, rgba(0, 0, 0, 0.08) );
 		@include screen ( medium ) {
-			padding: 25px 10px 0;
+			margin-top: 75px;
+			padding: 25px 0;
+		}
+		@include screen ( big ) {
+			padding-bottom: 0;
 		}
 		&:first-child {
 			margin-top: 0;
 		}
 
+		a {
+			display: block;
+		}
+		.media {
+			position: relative;
+		}
 		.media__img {
-			margin-top: -55px;
+			top: -20px;
+			position: relative;
 			@include box-shadow( 0px, 0px, 20px, rgba(0, 0, 0, 0.2) );
+			@include screen ( ipad ) {
+				top: -50px;
+			}
 
 			img {
 				margin-bottom: 0;
 			}
 		}
 		.info {
-			padding-bottom: 55px;
+			padding-bottom: 20px;
 			border-bottom: 1px solid #e7e5e5;
+			@include screen ( medium ) {
+				padding-bottom: 30px;
+			}
+			@include screen ( ipad ) {
+				padding-bottom: 40px;
+			}
+			@include screen ( big ) {
+				padding-bottom: 55px;
+			}
 
 			a {
 				display: block;
 
 				h2 {
 					color: #2070ae;
-					font-size: 20px;
+					font-size: 16px;
 					font-weight: bold;
 					text-transform: capitalize;
+					line-height: normal;
+					@include screen ( medium ) {
+						font-size: 20px;
+					}
 				}
-				span {
+				h3 {
 					color: #333333;
-					font-size: 14px;
+					font-size: 13px;
+					line-height: normal;
+					margin-top: 10px;
+					@include screen ( medium ) {
+						font-size: 14px;
+					}
 				}
 			}
 		}
 		.social {
-			margin: 0 -20px;
-			padding-top: 20px;
+			margin: 0 -10px;
+			padding: 20px 0;
 			text-align: center;
+			@include screen ( large ) {
+				margin: 0 -20px;
+			}
+			@include screen ( medium ) {
+				padding-bottom: 0;
+			}
 		}
 		.social__name {
-			padding: 0 20px;
+			padding: 0 10px;
 			display: inline-block;
 			vertical-align: middle;
+			@include screen ( large ) {
+				padding: 0 20px;
+			}
 
 			span {
 				display: block;
@@ -104,16 +151,26 @@
 				line-height: normal;
 			}
 			.title {
-				font-size: 12px;
+				font-size: 10px;
 				font-weight: bold;
+				@include screen ( medium ) {
+					font-size: 12px;
+				}
 			}
 			.points {
 				margin-top: 5px;
-				font-size: 20px;
+				font-size: 16px;
 				font-weight: lighter;
+				@include screen ( medium ) {
+					font-size: 20px;
+				}
 			}
 			.fa {
-				margin-right: 5px;
+				display: none;
+				@include screen ( medium ) {
+					margin-right: 5px;
+					display: inline-block;
+				}
 			}
 			.fa-bolt {
 				color: #ff6633;
@@ -126,8 +183,21 @@
 			}
 		}
 	}
-	/* .related {} */
+	.related {
+		padding-top: 20px;
+		border-top: 1px solid #e7e5e5;
+		@include screen ( medium ) {
+			padding-top: 0;
+			border-top: 0;
+		}
+	}
 	.related__row {
+		margin: 0;
+		margin-top: 15px;
+		&:first-child {
+			margin-top: 0;
+		}
+
 		.thumbnail {
 			border: 0;
 		}

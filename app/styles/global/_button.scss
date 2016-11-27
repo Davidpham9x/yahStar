@@ -47,6 +47,12 @@
         @include transform ( translateY(-50%) );
     }
 }
+.button--no-color {
+    background: transparent;
+    &:hover {
+        background: transparent;
+    }
+}
 
 .button--full {}
 .button__wrapper {

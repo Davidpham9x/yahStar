@@ -1,0 +1,179 @@
+.page--event__details {
+	background-color: #1b1b1b;
+
+	/** Event Details **/
+	.event__details {
+		padding-top: 20px;
+		@include screen ( medium ) {
+			padding-top: 40px;
+		}
+
+		.button__wrapper {
+			margin-top: 20px;
+			@include screen ( medium ) {
+				margin-top: 40px;
+			}
+		}
+	}
+	.event__details--info {
+		.celebrity__avatar {
+			max-width: 40px;
+			overflow: hidden;
+			@include border-radius(5px, 5px, 5px, 5px);
+			@include box-shadow( 0px, 0px, 20px, rgba(0, 0, 0, 0.2) );
+			@include screen ( medium ) {
+				width: 40%;
+				float: left;
+				max-width: 160px;
+			}
+
+			img {
+				width: 100%;
+			}
+		}
+		.info {
+			@include screen ( medium ) {
+				width: 60%;
+				float: left;
+				padding-left: 30px;
+			}
+
+			a {
+				display: block;
+			}
+			h2 {
+				color: #fff;
+				font-size: 14px;
+				font-weight: bold;
+				line-height: normal;
+				text-transform: capitalize;
+				text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+				@include screen ( medium ) {
+					font-size: 24px;
+				}
+			}
+			h3 {
+				color: #fff;
+				font-size: 12px;
+				line-height: normal;
+				text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+				margin-top: 5px;
+				@include screen ( medium ) {
+					font-size: 16px;
+					margin-top: 10px;
+				}
+			}
+		}
+		.info__short {
+			padding-bottom: 10px;
+			border-bottom: 1px solid rgba( 255, 255, 255, 0.2 );
+			@include screen ( medium ) {
+				width: auto;
+				float: none;
+				padding-bottom: 30px;
+			}
+
+			.celebrity__avatar {
+				width: 15%;
+				float: left;
+				@include screen ( medium ) {
+					width: auto;
+					float: none;
+				}
+			}
+			.heading {
+				width: 85%;
+				float: left;
+				padding-left: 10px;
+				@include screen ( medium ) {
+					width: auto;
+					float: none;
+					padding-left: 0;
+				}
+			}
+		}
+		.social {
+			margin: 0 -10px;
+			padding: 10px 0 0;
+			@include screen ( large ) {
+				margin: 0 -20px;
+			}
+			@include screen ( medium ) {
+				padding-bottom: 0;
+			}
+		}
+		.social__name {
+			padding: 0 10px;
+			display: inline-block;
+			vertical-align: middle;
+			@include screen ( large ) {
+				padding: 0 20px;
+			}
+
+			span {
+				color: #fff;
+				display: block;
+				line-height: normal;
+			}
+			.points {
+				font-size: 12px;
+				font-weight: lighter;
+				text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+				@include screen ( medium ) {
+					font-size: 18px;
+				}
+			}
+			.fa {
+				color: #fff;
+				margin-right: 5px;
+				display: inline-block;
+				text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+			}
+		}
+	}
+	.event__details--media {
+		margin: 20px 0;
+		@include screen ( medium ) {
+			margin: 30px 0;
+		}
+	}
+	.event__details--list {
+		>.row {
+			margin-top: 20px;
+			@include screen ( medium ) {
+				margin-top: 40px;
+			}
+			&:first-child {
+				margin-top: 0;
+			}
+
+			.columns {
+				&:nth-child(n+3) {
+					margin-top: 20px;
+					@include screen ( medium ) {
+						margin-top: 0;
+					}
+				}
+			}
+		}
+		/* .media {} */
+		.media__title {
+			color: #fff;
+			font-size: 13px;
+			font-weight: bold;
+			line-height: normal;
+		}
+		.social--views {
+			color: #999999;
+			font-size: 12px;
+			margin-top: 10px;
+
+			span {
+				line-height: normal;
+			}
+			.fa {
+				margin-right: 5px;
+			}
+		}
+	}
+}
