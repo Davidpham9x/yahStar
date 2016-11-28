@@ -3,9 +3,9 @@
 
 	/** Event Details **/
 	.event__details {
-		padding-top: 20px;
+		padding: 40px 0;
 		@include screen ( medium ) {
-			padding-top: 40px;
+			padding: 75px 0;
 		}
 
 		.button__wrapper {

@@ -1,10 +1,10 @@
 .page--home {
 	/** Celebrity **/
 	.celebrity {
-		padding-top: 40px;
+		padding: 40px 0;
 		background-color: #f9f9f9;
 		@include screen ( medium ) {
-			padding-top: 75px;
+			padding: 75px 0;
 		}
 
 		.highlight {

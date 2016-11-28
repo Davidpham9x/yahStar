@@ -1,6 +1,12 @@
 .page--idol {
 	/** Idol **/
 	.idol {
+		padding: 0 10px 40px;
+		background-color: #f9f9f9;
+		@include screen ( medium ) {
+			padding: 0 0 75px;
+		}
+
 		.button__wrapper {
 			margin-top: 20px;
 			@include screen ( medium ) {
@@ -94,12 +100,39 @@
 		margin-top: 25px;
 
 		.row {
-			margin-top: 35px;
+			margin: 0 -10px;
+			margin-top: 20px;
+			@include screen ( medium ) {
+				margin: 0 -15px;
+				margin-top: 40px;
+			}
 		}
 		.idol__content {
-			padding: 20px 15px;
+			padding: 20px 10px;
 			background-color: #fff;
 			@include box-shadow (  0px, 0px, 5px, rgba(0, 0, 0, 0.05) );
+			@include screen ( medium ) {
+				padding: 20px 15px;
+			}
+
+			.media {
+				width: 50%;
+				float: left;
+				padding: 0 10px;
+				&:nth-child( n+3 ) {
+					margin-top: 20px;
+				}
+				@include screen ( medium ) {
+					padding: 0 15px;
+					width: 33.333333%;
+					&:nth-child( n+3 ) {
+						margin-top: 0;
+					}
+					&:nth-child( n+4 ) {
+						margin-top: 40px;
+					}
+				}
+			}
 		}
 		.idol__content--events {
 			margin-top: 15px;
@@ -107,24 +140,15 @@
 				margin-top: 0;
 			}
 
-			.tabs {
-				ul {
-					text-align: left;
-
-					li {
-						padding: 0;
-
-						a {
-							padding: 0;
-						}
-					}
-				}
+			.title {
+				color: #333333;
+				font-size: 16px;
+				font-weight: 600;
 			}
 		}
 	}
 	.tabs {
 		border: 0;
-		padding-bottom: 20px;
 		background-color: #fff;
 		border-bottom: 1px solid rgba( 204, 204, 204, 0.5 );
 
@@ -149,8 +173,8 @@
 						background: none;
 						border-color: #eee;
 						&:before {
+							bottom: 0;
 							opacity: 1;
-							bottom: -25px;
 						}
 					}
 				}
@@ -159,8 +183,9 @@
 					color: #333333;
 					font-size: 16px;
 					font-weight: 600;
-					padding: 0 20px;
+					display: block;
 					position: relative;
+					padding: 0 20px 20px;
 					&:before {
 						content: '';
 						opacity: 0;
@@ -171,6 +196,67 @@
 						@include ab ( n, 0, -20px, n );
 					}
 				}
+			}
+		}
+	}
+	.events {
+		margin-top: 20px;
+		@include screen ( medium ) {
+			padding-top: 0;
+			border-top: 0;
+		}
+	}
+	.event__row {
+		margin: 0;
+		padding: 15px 0;
+		border-top: 1px solid rgba( 204, 204, 204, 0.5 );
+		&:last-child {
+			padding-bottom: 0;
+		}
+
+		.thumbnail {
+			border: 0;
+			box-shadow: none;
+			border-radius: 0;
+
+			img {
+				width: 90px;
+				@include screen ( medium ) {
+					width: auto;
+				}
+			}
+		}
+		.table {
+			position: relative;
+			&:before {
+				color: #cccccc;
+				content: '\f138';
+				font-size: 14px;
+				font-family: 'FontAwesome';
+				@include ab ( 50%, n, n, 0 );
+				@include transform ( translateY(-50%) );
+				@include transition ( all .2s ease-in-out );
+			}
+			&:hover {
+				&:before {
+					right: -5px;
+					color: #8db647;
+				}
+
+				p {
+					color: #8db647;
+				}
+			}
+		}
+		p {
+			color: #666666;
+			font-size: 12px;
+			line-height: 1.3em;
+
+			max-width: 95%;
+			margin-bottom: 0;
+			@include screen ( medium ) {
+				max-width: 100%;
 			}
 		}
 	}

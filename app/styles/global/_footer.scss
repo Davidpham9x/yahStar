@@ -2,4 +2,25 @@
 ** FOOTER
 */
 
-footer {}
+footer {
+	padding: 35px 0;
+	background-color: #333333;
+
+	.copyright {
+		margin: 0;
+		color: #999999;
+		font-size: 14px;
+	}
+	.mail {
+		color: #999999;
+		font-size: 14px;
+		&:hover {
+			text-decoration: underline;
+		}
+
+		.fa {
+			color: #999999;
+			margin-right: 5px;
+		}
+	}
+}
