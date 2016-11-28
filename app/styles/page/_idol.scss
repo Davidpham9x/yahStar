@@ -1,0 +1,184 @@
+.page--idol {
+	/** Idol **/
+	.idol {
+		.button__wrapper {
+			margin-top: 20px;
+			@include screen ( medium ) {
+				margin-top: 40px;
+			}
+		}
+	}
+	.idol__intro {
+		padding: 25px 0;
+		position: relative;
+		background-color: #fff;
+		@include box-shadow (  0px, 0px, 5px, rgba(0, 0, 0, 0.05) );
+
+		.celebrity__avatar {
+			width: 100%;
+			max-width: 40px;
+			overflow: hidden;
+			display: inline-block;
+			border: 3px solid #fff;
+			@include border-radius(5px, 5px, 5px, 5px);
+			@include box-shadow( 0px, 0px, 20px, rgba(0, 0, 0, 0.2) );
+			@include screen ( medium ) {
+				max-width: 160px;
+				margin-top: -10%;
+			}
+
+			img {
+				width: 100%;
+			}
+		}
+		.idol__name {
+			margin-left: 20px;
+			vertical-align: top;
+			display: inline-block;
+
+			color: #333333;
+			font-size: 24px;
+			font-weight: bold;
+			line-height: normal;
+		}
+		.social {
+			float: right;
+		}
+		.social__name {
+			padding: 0 10px;
+			display: inline-block;
+			vertical-align: middle;
+			@include screen ( large ) {
+				padding: 0 20px;
+			}
+			&.facebook {
+				.title, .fa {
+					color: #4c66a4;
+				}
+			}
+			&.youtube {
+				.title, .fa {
+					color: #c4302b;
+				}
+			}
+
+			span {
+				display: block;
+				color: #333333;
+				line-height: normal;
+			}
+			.title {
+				font-size: 10px;
+				font-weight: bold;
+				@include screen ( medium ) {
+					font-size: 14px;
+				}
+			}
+			.points {
+				font-size: 16px;
+				font-weight: lighter;
+				@include screen ( medium ) {
+					font-size: 24px;
+				}
+			}
+			.fa {
+				display: none;
+				@include screen ( medium ) {
+					margin-right: 5px;
+					display: inline-block;
+				}
+			}
+		}
+	}
+	.idol__articles {
+		margin-top: 25px;
+
+		.row {
+			margin-top: 35px;
+		}
+		.idol__content {
+			padding: 20px 15px;
+			background-color: #fff;
+			@include box-shadow (  0px, 0px, 5px, rgba(0, 0, 0, 0.05) );
+		}
+		.idol__content--events {
+			margin-top: 15px;
+			@include screen ( medium ) {
+				margin-top: 0;
+			}
+
+			.tabs {
+				ul {
+					text-align: left;
+
+					li {
+						padding: 0;
+
+						a {
+							padding: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+	.tabs {
+		border: 0;
+		padding-bottom: 20px;
+		background-color: #fff;
+		border-bottom: 1px solid rgba( 204, 204, 204, 0.5 );
+
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			text-align: center;
+
+			li {
+				padding: 0 15px;
+				display: inline-block;
+				vertical-align: middle;
+				&:hover, &.active {
+					background-color: #eeeeee;
+					@include screen ( medium ) {
+						background-color: transparent;
+					}
+
+					a {
+						color: #8cb73e;
+						background: none;
+						border-color: #eee;
+						&:before {
+							opacity: 1;
+							bottom: -25px;
+						}
+					}
+				}
+
+				a {
+					color: #333333;
+					font-size: 16px;
+					font-weight: 600;
+					padding: 0 20px;
+					position: relative;
+					&:before {
+						content: '';
+						opacity: 0;
+						width: 100%;
+						height: 4px;
+						background-color: #8cb73e;
+						@include transition ( all .2s ease-in-out );
+						@include ab ( n, 0, -20px, n );
+					}
+				}
+			}
+		}
+	}
+	/* .media {} */
+	.media__title {
+		color: #2070ae;
+		font-size: 13px;
+		font-weight: bold;
+		line-height: normal;
+	}
+}
