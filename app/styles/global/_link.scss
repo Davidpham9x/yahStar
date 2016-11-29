@@ -3,9 +3,32 @@
 ** Please use link- as your CSS class prefix
 */
 
-.link {}
+.link {
+	display: inline-block;
+}
 
 .link--full {}
+.link--view-all {
+	color: #666666;
+	font-size: 12px;
+	text-transform: capitalize;
+	text-decoration: underline!important;
+	@include screen ( medium ) {
+		&:hover {
+			color: #8db647;
+
+			.fa {
+				left: 5px;
+			}
+		}
+	}
+
+	.fa {
+		left: 0;
+		position: relative;
+		@include transition ( all .3s ease-in-out );
+	}
+}
 
 .link__wrapper {
 	text-align: center;

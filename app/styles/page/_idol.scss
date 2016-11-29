@@ -15,22 +15,25 @@
 		}
 	}
 	.idol__intro {
-		padding: 25px 0;
 		position: relative;
-		background-color: #fff;
-		@include box-shadow (  0px, 0px, 5px, rgba(0, 0, 0, 0.05) );
+		@include screen ( medium ) {
+			padding: 25px 0;
+			background-color: #fff;
+			@include box-shadow (  0px, 0px, 5px, rgba(0, 0, 0, 0.05) );
+		}
 
 		.celebrity__avatar {
 			width: 100%;
-			max-width: 40px;
+			max-width: 50px;
 			overflow: hidden;
+			margin-top: -10%;
 			display: inline-block;
-			border: 3px solid #fff;
+			border: 1px solid #fff;
 			@include border-radius(5px, 5px, 5px, 5px);
 			@include box-shadow( 0px, 0px, 20px, rgba(0, 0, 0, 0.2) );
 			@include screen ( medium ) {
 				max-width: 160px;
-				margin-top: -10%;
+				border: 3px solid #fff;
 			}
 
 			img {
@@ -38,17 +41,32 @@
 			}
 		}
 		.idol__name {
-			margin-left: 20px;
+			margin-top: -10%;
+			margin-left: 10px;
 			vertical-align: top;
 			display: inline-block;
 
-			color: #333333;
-			font-size: 24px;
+			color: #fff;
+			font-size: 18px;
 			font-weight: bold;
 			line-height: normal;
+			@include screen ( medium ) {
+				color: #333333;
+				font-size: 24px;
+				margin-top: 0;
+				margin-left: 20px;
+			}
 		}
 		.social {
-			float: right;
+			position: absolute;
+			top: 5px;
+			left: 70px;
+			@include screen ( medium ) {
+				top: auto;
+				left: auto;
+				position: relative;
+				float: right;
+			}
 		}
 		.social__name {
 			padding: 0 10px;
@@ -88,17 +106,28 @@
 				}
 			}
 			.fa {
-				display: none;
-				@include screen ( medium ) {
-					margin-right: 5px;
-					display: inline-block;
-				}
+				margin-right: 5px;
+				display: inline-block;
 			}
 		}
 	}
 	.idol__articles {
 		margin-top: 25px;
 
+		.columns {
+			margin-top: 15px;
+			background-color: #fff;
+			@include box-shadow (  0px, 0px, 5px, rgba(0, 0, 0, 0.05) );
+			&:first-child {
+				margin-top: 0;
+				/* @include screen ( medium ) {} */
+			}
+			@include screen ( medium ) {
+				margin-top: 0;
+				box-shadow: none;
+				background-color: transparent;
+			}
+		}
 		.row {
 			margin: 0 -10px;
 			margin-top: 20px;
@@ -108,11 +137,11 @@
 			}
 		}
 		.idol__content {
-			padding: 20px 10px;
-			background-color: #fff;
-			@include box-shadow (  0px, 0px, 5px, rgba(0, 0, 0, 0.05) );
+			padding: 20px 0;
 			@include screen ( medium ) {
 				padding: 20px 15px;
+				background-color: #fff;
+				@include box-shadow (  0px, 0px, 5px, rgba(0, 0, 0, 0.05) );
 			}
 
 			.media {
@@ -135,11 +164,6 @@
 			}
 		}
 		.idol__content--events {
-			margin-top: 15px;
-			@include screen ( medium ) {
-				margin-top: 0;
-			}
-
 			.title {
 				color: #333333;
 				font-size: 16px;
@@ -159,15 +183,10 @@
 			text-align: center;
 
 			li {
-				padding: 0 15px;
+				padding: 0 7px;
 				display: inline-block;
 				vertical-align: middle;
 				&:hover, &.active {
-					background-color: #eeeeee;
-					@include screen ( medium ) {
-						background-color: transparent;
-					}
-
 					a {
 						color: #8cb73e;
 						background: none;
@@ -178,22 +197,33 @@
 						}
 					}
 				}
+				@include screen ( ipad ) {
+					padding: 0 15px;
+				}
 
 				a {
 					color: #333333;
-					font-size: 16px;
+					font-size: 13px;
 					font-weight: 600;
 					display: block;
 					position: relative;
-					padding: 0 20px 20px;
+					padding: 0 7px 10px;
 					&:before {
 						content: '';
 						opacity: 0;
 						width: 100%;
-						height: 4px;
+						height: 3px;
 						background-color: #8cb73e;
 						@include transition ( all .2s ease-in-out );
-						@include ab ( n, 0, -20px, n );
+						@include ab ( n, 0, -10px, n );
+						@include screen ( medium ) {
+							height: 4px;
+							bottom: -20px;
+						}
+					}
+					@include screen ( ipad ) {
+						font-size: 16px;
+						padding: 0 20px 20px;
 					}
 				}
 			}
@@ -257,6 +287,7 @@
 			margin-bottom: 0;
 			@include screen ( medium ) {
 				max-width: 100%;
+				padding-right: 15px;
 			}
 		}
 	}
