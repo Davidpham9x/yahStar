@@ -3,34 +3,122 @@
 */
 
 footer {
-	padding: 20px 0;
-	text-align: center;
-	background-color: #333333;
-	@include screen ( small ) {
-		padding: 35px 0;
-	}
+	.footer--top {
+		padding: 20px 0;
+		position: relative;
+		text-align: center;
+		background-color: #2d2d2d;
+		@include screen ( medium ) {
+			text-align: left;
+		}
 
-	.copyright {
-		margin: 0;
-		color: #999999;
-		font-size: 14px;
-		@include screen ( small ) {
+		.footer__content {
+			margin-top: 20px;
+			@include screen ( medium ) {
+				margin-top: 0;
+			}
+		}
+		.sitemap {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			width: 50%;
 			float: left;
+			text-align: left;
+			@include screen ( medium ) {
+				width: auto;
+				text-align: center;
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+			li {
+				@include screen ( medium ) {
+					padding: 0 20px;
+					display: inline-block;
+					vertical-align: middle;
+					&:first-child {
+						padding-left: 0;
+					}
+					&:last-child {
+						padding-right: 0;
+					}
+				}
+
+				a {
+					color: #f9f9f9;
+					font-size: 14px;
+					font-weight: bold;
+					line-height: 20px;
+					@include screen ( medium ) {
+						line-height: 40px;
+					}
+				}
+			}
+		}
+		.logo {
+			@include screen ( medium ) {
+				@include ab ( 50%, 50%, n, n );
+				@include transform ( translate(-50%, -50%) );
+			}
+		}
+		.search {
+			width: 50%;
+			float: right;
+			text-align: left;
+			display: inline-block;
+			vertical-align: middle;
+			@include screen ( medium ) {
+				width: auto;
+			}
+
+			label {
+				color: #949393;
+				font-size: 14px;
+				font-weight: bold;
+				display: inline-block;
+				vertical-align: middle;
+			}
+			.select-wrapper {
+				width: 100%;
+				margin-top: 10px;
+				display: inline-block;
+				vertical-align: middle;
+				@include screen ( medium ) {
+					width: 190px;
+					margin-top: 0;
+					margin-left: 20px;
+				}
+			}
 		}
 	}
-	.mail {
-		color: #999999;
-		font-size: 14px;
-		@include screen ( small ) {
-			float: right;
-		}
-		&:hover {
-			text-decoration: underline;
-		}
+	.footer--bottom {
+		padding: 20px 0;
+		text-align: center;
+		background-color: #333333;
 
-		.fa {
+		.copyright {
+			margin: 0;
 			color: #999999;
-			margin-right: 5px;
+			font-size: 14px;
+			@include screen ( small ) {
+				float: left;
+			}
+		}
+		.mail {
+			color: #999999;
+			font-size: 14px;
+			@include screen ( small ) {
+				float: right;
+			}
+			&:hover {
+				text-decoration: underline;
+			}
+
+			.fa {
+				color: #999999;
+				margin-right: 5px;
+			}
 		}
 	}
 }

@@ -5,7 +5,10 @@
 
 .button {
     border: none;
-    display: inline-block;
+    display: block;
+    @include screen ( medium ) {
+        display: inline-block;
+    }
 
     color: #666666;
     font-size: 16px;

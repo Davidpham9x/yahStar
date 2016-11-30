@@ -141,6 +141,12 @@
 			&:last-child {
 				padding-right: 0;
 			}
+			@include screen ( xs ) {
+				padding: 0 10px;
+			}
+			/* @include screen ( small ) {
+				padding: 0 15px;
+			} */
 			@include screen ( large ) {
 				padding: 0 20px;
 			}
@@ -240,7 +246,7 @@
 			max-width: 95%;
 			margin-bottom: 0;
 			@include screen ( medium ) {
-				max-width: 100%;
+				max-width: 90%;
 			}
 		}
 	}
