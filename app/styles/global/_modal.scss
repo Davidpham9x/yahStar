@@ -160,7 +160,7 @@
         }
         .content__info {
             width: 100%;
-            padding: 20px;
+            padding: 20px 20px 0;
             background-color: #fff;
             @include screen ( medium ) {
                 width: 40%;
@@ -214,12 +214,14 @@
                     line-height: normal;
                 }
                 .info {
+                    height: 50px;
                     margin-top: 10px;
+                    overflow-y: auto;
 
                     p {
                         margin-bottom: 0;
                     }
-                    .short-info {
+                    .short-info, .full-info {
                         color: #666666;
                         font-size: 13px;
                         text-transform: uppercase;
@@ -231,12 +233,18 @@
                         text-decoration: none!important;
                         display: inline-block;
                         vertical-align: middle;
+                        @include screen ( medium ) {
+                            &:hover {
+                                color: #8db647;
+
+                                .fa {
+                                    left: 5px;
+                                }
+                            }
+                        }
 
                         .fa {
-                            left: 5px;
-                            &:hover {
-                                left: 10px;
-                            }
+                            left: 0;
                         }
                     }
                     .full-info {
@@ -266,6 +274,7 @@
                         a {
                             color: #333;
                             font-size: 14px;
+                            padding: 15px;
                             background-color: transparent;
                         }
                     }
@@ -298,12 +307,10 @@
                                 border: 0;
                                 box-shadow: none;
                                 border-radius: 0;
+                                min-width: 100px;
 
                                 img {
-                                    width: 90px;
-                                    @include screen ( medium ) {
-                                        width: auto;
-                                    }
+                                    width: 100%;
                                 }
                             }
                             .table {
@@ -342,7 +349,10 @@
                         }
                     }
                     .comment {
-                        /* .comment__content {} */
+                        .comment__content {
+                            overflow-y: auto;
+                            max-height: 285px;
+                        }
                         .comment__avatar {
                             float: left;
                             max-width: 35px;

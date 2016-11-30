@@ -50,6 +50,12 @@ var yahStar = window.yahStar || {}; //global namespace for YOUR yahStar, Please 
                     $('.autocomplete').hide();
                 }
             });
+
+            $('#link-view-all').click(function (e) {
+                e.preventDefault();
+
+                $('.full-info').slideToggle('normal');
+            });
         },
 
         initFormElements: function() {
@@ -158,6 +164,7 @@ var yahStar = window.yahStar || {}; //global namespace for YOUR yahStar, Please 
                         this.st.mainClass = 'mfp-zoom-out';
                     },
                     open: function () {
+                        new Foundation.Equalizer( $('.trending__row') ).applyHeight();
                         new Foundation.Equalizer( $('#modal__row-youtube') ).applyHeight();
 
                         $('#youtube-tabs').on('change.zf.tabs', function() {
