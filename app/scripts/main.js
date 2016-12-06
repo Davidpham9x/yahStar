@@ -35,27 +35,56 @@ var yahStar = window.yahStar || {}; //global namespace for YOUR yahStar, Please 
             this.initShowMenuMobile();
             this.initShowSearchMobile();
 
-            if ( $('.page--home').length ) {
-                yahStar.Global.initModalCreateEvent();
+            if ( $('#banner').length ) {
+                yahStar.Global.initParallax();
             }
 
-            if ( $('.page--video').length ) {
-                yahStar.Global.initModalYoutube();
+            this.initHandleWebsiteResize();
+
+            if ($('.link-create-event').length) {
+                $('.link-create-event').off('click').on('click', function(e) {
+                    e.preventDefault();
+
+                    yahStar.Global.initModalCreateEvent();
+                });
+            }
+
+            if ($('.link-create-yahpage').length) {
+                $('.link-create-yahpage').off('click').on('click', function(e) {
+                    e.preventDefault();
+
+                    yahStar.Global.initModalCreateYahpage();
+                });
+            }
+
+            if ($('.page--video-details').length) {
+                yahStar.Global.initModalYoutubeStatic();
+            }
+
+            if ($('.counter').length) {
+                $('.counter').counterUp({
+                    delay: 10,
+                    time: 1000
+                });
             }
 
             $(document.body).click(function(e) {
-                if ( $(e.target).hasClass('txt-search') ) {
+                if ($(e.target).hasClass('txt-search')) {
                     return;
                 } else {
                     $('.autocomplete').hide();
                 }
             });
 
-            $('#link-view-all').click(function (e) {
+            $('#link-view-all').click(function(e) {
                 e.preventDefault();
 
                 $('.full-info').slideToggle('normal');
             });
+
+            // simple as this!
+            // NOTE: init() is implicitly called with the plugin
+            $("#header").headroom();
         },
 
         initFormElements: function() {
@@ -105,6 +134,14 @@ var yahStar = window.yahStar || {}; //global namespace for YOUR yahStar, Please 
             });
         },
 
+        initHandleWebsiteResize: function() {
+            window.windowWidth = 0;
+
+            $(window).resize(function() {
+                window.windowWidth = $(window).width();
+            }).trigger('resize');
+        },
+
         initShowMenuMobile: function() {
             var aTag = $('.icon-menu-bar'),
                 menuContent = $('.main-menu');
@@ -139,12 +176,55 @@ var yahStar = window.yahStar || {}; //global namespace for YOUR yahStar, Please 
                 callbacks: {
                     beforeOpen: function() {
                         this.st.mainClass = 'mfp-zoom-out';
+                    },
+                    open: function() {
+                        new Foundation.Equalizer($('.create-row')).applyHeight();
+
+                        if (window.windowWidth <= 640) {
+                            $(document.body).css('overflow', 'hidden');
+                        }
+                    },
+                    close: function() {
+                        $(document.body).css('overflow', '');
                     }
                 },
                 midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
             });
 
             $('#modal--create-event').find('.close').off('click').on('click', function(e) {
+                e.preventDefault();
+
+                var magnificPopup = $.magnificPopup.instance;
+                magnificPopup.close(); // Close popup that is currently opened
+            });
+        },
+
+        initModalCreateYahpage: function() {
+            $.magnificPopup.open({
+                items: {
+                    src: '#modal--create-yahpage'
+                },
+                type: 'inline',
+                removalDelay: 500, // Delay removal by X to allow out-animation
+                callbacks: {
+                    beforeOpen: function() {
+                        this.st.mainClass = 'mfp-zoom-out';
+                    },
+                    open: function() {
+                        new Foundation.Equalizer($('.create-row')).applyHeight();
+
+                        if (window.windowWidth <= 640) {
+                            $(document.body).css('overflow', 'hidden');
+                        }
+                    },
+                    close: function() {
+                        $(document.body).css('overflow', '');
+                    }
+                },
+                midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+            });
+
+            $('#modal--create-yahpage').find('.close').off('click').on('click', function(e) {
                 e.preventDefault();
 
                 var magnificPopup = $.magnificPopup.instance;
@@ -163,12 +243,12 @@ var yahStar = window.yahStar || {}; //global namespace for YOUR yahStar, Please 
                     beforeOpen: function() {
                         this.st.mainClass = 'mfp-zoom-out';
                     },
-                    open: function () {
-                        new Foundation.Equalizer( $('.trending__row') ).applyHeight();
-                        new Foundation.Equalizer( $('#modal__row-youtube') ).applyHeight();
+                    open: function() {
+                        new Foundation.Equalizer($('.trending__row')).applyHeight();
+                        new Foundation.Equalizer($('#modal__row-youtube')).applyHeight();
 
                         $('#youtube-tabs').on('change.zf.tabs', function() {
-                            new Foundation.Equalizer( $('#modal__row-youtube') ).applyHeight();
+                            new Foundation.Equalizer($('#modal__row-youtube')).applyHeight();
                         });
                     }
                 },
@@ -183,16 +263,54 @@ var yahStar = window.yahStar || {}; //global namespace for YOUR yahStar, Please 
             });
         },
 
-        initAutocomplete: function () {
+        initModalYoutubeStatic: function() {
+            $.magnificPopup.open({
+                items: {
+                    src: '#modal--youtube-static'
+                },
+                type: 'inline',
+                removalDelay: 500, // Delay removal by X to allow out-animation
+                callbacks: {
+                    beforeOpen: function() {
+                        this.st.mainClass = 'mfp-zoom-out';
+                    },
+                    open: function() {
+                        new Foundation.Equalizer($('.trending__row')).applyHeight();
+                        new Foundation.Equalizer($('#modal__row-youtube')).applyHeight();
+
+                        $('#youtube-tabs').on('change.zf.tabs', function() {
+                            new Foundation.Equalizer($('#modal__row-youtube')).applyHeight();
+                        });
+                    }
+                },
+                midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+            });
+        },
+
+        initAutocomplete: function() {
             var autocompleteContent = $('.autocomplete');
 
-            $('#txt-search').click(function () {
+            $('#txt-search').click(function() {
                 autocompleteContent.show().css({
                     'top': $(this).offset().top + $(this).outerHeight() + 5,
                     'left': $(this).offset().left,
                     'width': $(this).outerWidth()
                 });
             });
+        },
+
+        initParallax: function() {
+            var scrollPos = $(window).scrollTop(),
+                winWidth = $(window)[0].innerWidth,
+                winHeight = winHeight = $(window)[0].innerHeight,
+                speed = 0.5,
+                topHowItWork = 0,
+                topFeedback = 0,
+                infoTop = 0,
+                hTop = 60;
+
+            $('#banner')
+                .css('backgroundPosition', '50% ' + (Math.round((($('#banner').offset().top - scrollPos)-hTop) * speed)) + 'px');
         }
     };
 })(jQuery);

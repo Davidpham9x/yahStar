@@ -1,11 +1,11 @@
 <!-- Box Modal -->
 
-<!-- /* Box Modal: Confirm */ -->
+<!-- /* Box Modal: Create Event */ -->
 <div id="modal--create-event" class="mfp-hide modal modal--create-event">
     <div class="outer">
         <div class="inner">
-            <div class="content clearfix">
-                <div class="intro">
+            <div class="content clearfix create-row" data-equalizer data-equalize-on="medium">
+                <div class="intro" data-equalizer-watch>
                     <div class="heading">
                         <span class="title">Create Event</span>
                         <span class="hint">Want your channel appear on YahStar? Register now!</span>
@@ -13,13 +13,13 @@
                     <img src="images/global/letter.png" alt="" class="show-for-small">
                 </div>
                 <img src="images/global/letter.png" alt="" class="letter hide-for-small">
-                <div class="form__wrapper">
+                <div class="form__wrapper" data-equalizer-watch>
                     <form class="form">
                         <div class="form_field">
                             <div class="col">
                                 <label for="txt-event-name">Event Names <sup>*</sup></label>
                                 <div class="input-text input-text-2">
-                                    <input type="text" class="txt-event-name" id="txt-event-name" name="txt-event-name" placeholder="Justin">
+                                    <input type="text" class="txt-event-name" id="txt-event-name" name="txt-event-name" placeholder="Gameshow Dance with star...">
                                 </div>
                             </div>
                         </div>
@@ -27,7 +27,7 @@
                             <div class="col">
                                 <label for="txt-facebook-fanpage">Facebook Fanpage <sup>*</sup></label>
                                 <div class="input-text input-text-2">
-                                    <input type="text" class="txt-facebook-fanpage" id="txt-facebook-fanpage" name="txt-facebook-fanpage" placeholder="Justin">
+                                    <input type="text" class="txt-facebook-fanpage" id="txt-facebook-fanpage" name="txt-facebook-fanpage" placeholder="/gameshow-dance-with-star">
                                 </div>
                             </div>
                         </div>
@@ -35,7 +35,7 @@
                             <div class="col">
                                 <label for="txt-youtube-channel">Youtube Channel <sup>*</sup></label>
                                 <div class="input-text input-text-2">
-                                    <input type="text" class="txt-youtube-channel" id="txt-youtube-channel" name="txt-youtube-channel" placeholder="Justin">
+                                    <input type="text" class="txt-youtube-channel" id="txt-youtube-channel" name="txt-youtube-channel" placeholder="https://www.youtube.com/channel/dance-with-star">
                                 </div>
                             </div>
                         </div>
@@ -43,13 +43,77 @@
                             <div class="col">
                                 <label for="txt-your-email">Your Email <sup>*</sup></label>
                                 <div class="input-text input-text-2">
-                                    <input type="text" class="txt-your-email" id="txt-your-email" name="txt-your-email" placeholder="Justin">
+                                    <input type="text" class="txt-your-email" id="txt-your-email" name="txt-your-email" placeholder="Email contact">
                                 </div>
                             </div>
                         </div>
                         <div class="form_field">
                             <div class="col">
-                                <div class="button__wrapper button__wrapper--right">
+                                <div class="button__wrapper button__wrapper--left">
+                                    <a href="" title="Register" class="button button--green">Register</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <a href="" title="Đóng" class="close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- /* Box Modal: Create YahPage */ -->
+<div id="modal--create-yahpage" class="mfp-hide modal modal--create-yahpage">
+    <div class="outer">
+        <div class="inner">
+            <div class="content clearfix create-row" data-equalizer data-equalize-on="medium">
+                <div class="intro" data-equalizer-watch>
+                    <div class="heading">
+                        <span class="title">Create YahPage</span>
+                        <span class="hint">Want to create your page on YahStar? Register now!</span>
+                    </div>
+                    <img src="images/global/letter.png" alt="" class="show-for-small">
+                </div>
+                <img src="images/global/letter.png" alt="" class="letter hide-for-small">
+                <div class="form__wrapper" data-equalizer-watch>
+                    <form class="form">
+                        <div class="form_field">
+                            <div class="col">
+                                <label for="txt-event-name">YahPage Name <sup>*</sup></label>
+                                <div class="input-text input-text-2">
+                                    <input type="text" class="txt-event-name" id="txt-event-name" name="txt-event-name" placeholder="Gameshow Dance with star...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_field">
+                            <div class="col">
+                                <label for="txt-facebook-fanpage">Facebook Fanpage <sup>*</sup></label>
+                                <div class="input-text input-text-2">
+                                    <input type="text" class="txt-facebook-fanpage" id="txt-facebook-fanpage" name="txt-facebook-fanpage" placeholder="/gameshow-dance-with-star">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_field">
+                            <div class="col">
+                                <label for="txt-youtube-channel">Youtube Channel <sup>*</sup></label>
+                                <div class="input-text input-text-2">
+                                    <input type="text" class="txt-youtube-channel" id="txt-youtube-channel" name="txt-youtube-channel" placeholder="https://www.youtube.com/channel/dance-with-star">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_field">
+                            <div class="col">
+                                <label for="txt-your-email">Your Email <sup>*</sup></label>
+                                <div class="input-text input-text-2">
+                                    <input type="text" class="txt-your-email" id="txt-your-email" name="txt-your-email" placeholder="Email contact">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_field">
+                            <div class="col">
+                                <div class="button__wrapper button__wrapper--left">
                                     <a href="" title="Register" class="button button--green">Register</a>
                                 </div>
                             </div>
@@ -77,113 +141,330 @@
                     </div>
                 </div>
                 <div class="content__info" data-equalizer-watch="row">
-                    <div class="celebrity clearfix">
-                        <a href="" title="Justin Bieber" class="celebrity__avatar">
-                            <img src="images/dummy/justin_bieber.jpg" alt="">
-                        </a>
-                        <div class="celebrity_info">
-                            <a href="" title="Justin Bieber" class="celebrity__name">
-                                Justin Bieber
+                    <div class="inner">
+                        <div class="celebrity clearfix">
+                            <a href="" title="Justin Bieber" class="celebrity__avatar">
+                                <img src="images/dummy/justin_bieber.jpg" alt="">
                             </a>
-                            <div class="celebrity__points">
-                                <span class="label">
-                                    <i class="fa fa-bolt" aria-hidden="true"></i>
-                                    <strong>234.485</strong> Points
-                                </span>
+                            <div class="celebrity_info">
+                                <a href="" title="Justin Bieber" class="celebrity__name">
+                                    Justin Bieber
+                                </a>
+                                <div class="celebrity__points">
+                                    <span class="label">
+                                        <i class="fa fa-bolt" aria-hidden="true"></i>
+                                        <strong>234.485</strong> Points
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h4 class="title">Major Lazer - Cold Water (feat. Justin Bieber &amp; MØ) (Official Lyric Video)</h4>
+                            <div class="info">
+                                <p class="short-info">
+                                    OFFICIAL LYRIC VIDEO // MAJOR LAZER - COLD WATER (FEAT. JUSTIN BIEBER &amp; MØ)...
+                                    <a href="" title="View more" class="link link--view-all" id="link-view-all">View more <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                </p>
+                                <p class="full-info">
+                                    OFFICIAL LYRIC VIDEO // MAJOR LAZER - COLD WATER (FEAT. JUSTIN BIEBER &amp; MØ) SUBSCRIBE TO THE MAJOR LAZER YOUTUBE CHANNEL TO WATCH MORE!
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="video-info">
-                        <h4 class="title">Major Lazer - Cold Water (feat. Justin Bieber &amp; MØ) (Official Lyric Video)</h4>
-                        <div class="info">
-                            <p class="short-info">
-                                OFFICIAL LYRIC VIDEO // MAJOR LAZER - COLD WATER (FEAT. JUSTIN BIEBER &amp; MØ)...
-                                <a href="" title="View more" class="link link--view-all" id="link-view-all">View more <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                            </p>
-                            <p class="full-info">
-                                OFFICIAL LYRIC VIDEO // MAJOR LAZER - COLD WATER (FEAT. JUSTIN BIEBER &amp; MØ) SUBSCRIBE TO THE MAJOR LAZER YOUTUBE CHANNEL TO WATCH MORE!
-                            </p>
+                    <div class="tabs__content">
+                        <div class="inner">
+                            <ul class="tabs" data-tabs id="youtube-tabs">
+                                <li class="tabs-title is-active">
+                                    <a href="#panel1" aria-selected="true" title="Share">
+                                        <i class="fa fa-share" aria-hidden="true"></i>
+                                        Share
+                                    </a>
+                                </li>
+                                <li class="tabs-title">
+                                    <a href="#panel2" title="Comment">
+                                        <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                                        Comment
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tabs-content" data-tabs-content="youtube-tabs">
+                            <div class="tabs-panel is-active" id="panel1">
+                                <div class="inner">
+                                    <div class="share">
+                                        <img src="images/dummy/share.png" alt="">
+                                    </div>
+                                    <div class="trending">
+                                        <span class="title">Top Trending Today</span>
+                                        <div class="trending__row media-object" data-equalizer>
+                                            <div class="media-object-section">
+                                                <div class="thumbnail" data-equalizer-watch>
+                                                    <img src="images/dummy/justin_bieber--trending.jpg">
+                                                </div>
+                                            </div>
+                                            <div class="media-object-section">
+                                                <a href="" class="table" data-equalizer-watch>
+                                                    <div class="table__cell">
+                                                        <p>2016 MTV EMA Winners List: Justin Bieber Earns Three Big Wins</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="trending__row media-object" data-equalizer>
+                                            <div class="media-object-section">
+                                                <div class="thumbnail" data-equalizer-watch>
+                                                    <img src="images/dummy/justin_bieber--trending.jpg">
+                                                </div>
+                                            </div>
+                                            <div class="media-object-section">
+                                                <a href="" class="table" data-equalizer-watch>
+                                                    <div class="table__cell">
+                                                        <p>2016 MTV EMA Winners List: Justin Bieber Earns Three Big Wins</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="trending__row media-object" data-equalizer>
+                                            <div class="media-object-section">
+                                                <div class="thumbnail" data-equalizer-watch>
+                                                    <img src="images/dummy/justin_bieber--trending.jpg">
+                                                </div>
+                                            </div>
+                                            <div class="media-object-section">
+                                                <a href="" class="table" data-equalizer-watch>
+                                                    <div class="table__cell">
+                                                        <p>2016 MTV EMA Winners List: Justin Bieber Earns Three Big Wins</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="trending__row media-object" data-equalizer>
+                                            <div class="media-object-section">
+                                                <div class="thumbnail" data-equalizer-watch>
+                                                    <img src="images/dummy/justin_bieber--trending.jpg">
+                                                </div>
+                                            </div>
+                                            <div class="media-object-section">
+                                                <a href="" class="table" data-equalizer-watch>
+                                                    <div class="table__cell">
+                                                        <p>2016 MTV EMA Winners List: Justin Bieber Earns Three Big Wins</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div> -->
+                                        <!-- <div class="related"></div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs-panel" id="panel2">
+                                <div class="comment">
+                                    <div class="comment__content">
+                                        <div class="comment__row clearfix">
+                                            <div class="comment__avatar">
+                                                <img src="images/dummy/justin_bieber.jpg" alt="" />
+                                            </div>
+                                            <div class="comment_info">
+                                                <strong>Hai Truong: </strong>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos as...
+                                            </div>
+                                        </div>
+                                        <div class="comment__row clearfix">
+                                            <div class="comment__avatar">
+                                                <img src="images/dummy/justin_bieber.jpg" alt="" />
+                                            </div>
+                                            <div class="comment_info">
+                                                <strong>Hai Truong: </strong>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos as...
+                                            </div>
+                                        </div>
+                                        <div class="comment__row clearfix">
+                                            <div class="comment__avatar">
+                                                <img src="images/dummy/justin_bieber.jpg" alt="" />
+                                            </div>
+                                            <div class="comment_info">
+                                                <strong>Hai Truong: </strong>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos as...
+                                            </div>
+                                        </div>
+                                        <div class="comment__row clearfix">
+                                            <div class="comment__avatar">
+                                                <img src="images/dummy/justin_bieber.jpg" alt="" />
+                                            </div>
+                                            <div class="comment_info">
+                                                <strong>Hai Truong: </strong>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos as...
+                                            </div>
+                                        </div>
+                                        <div class="comment__row clearfix">
+                                            <div class="comment__avatar">
+                                                <img src="images/dummy/justin_bieber.jpg" alt="" />
+                                            </div>
+                                            <div class="comment_info">
+                                                <strong>Hai Truong: </strong>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos as...
+                                            </div>
+                                        </div>
+                                        <div class="comment__row clearfix">
+                                            <div class="comment__avatar">
+                                                <img src="images/dummy/justin_bieber.jpg" alt="" />
+                                            </div>
+                                            <div class="comment_info">
+                                                <strong>Hai Truong: </strong>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos as...
+                                            </div>
+                                        </div>
+                                        <div class="comment__row clearfix">
+                                            <div class="comment__avatar">
+                                                <img src="images/dummy/justin_bieber.jpg" alt="" />
+                                            </div>
+                                            <div class="comment_info">
+                                                <strong>Hai Truong: </strong>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos as...
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment__box clearfix">
+                                        <div class="comment__avatar">
+                                            <img src="images/dummy/justin_bieber.jpg" alt="" />
+                                        </div>
+                                        <div class="comment_input">
+                                            <div class="input-text input-text-3">
+                                                <input type="text" class="" name="" id="" placeholder="What do you think?" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="" title="Đóng" class="close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- /* Box Modal: Youtube Static */ -->
+<div id="modal--youtube-static" class="mfp-hide modal modal--youtube">
+    <div class="outer">
+        <div class="inner">
+            <div id="modal__row-youtube" class="content clearfix" data-equalizer="row" data-equalize-on="medium">
+                <div class="content__video table" data-equalizer-watch="row">
+                    <div class="table__cell">
+                        <div class="flex-video widescreen">
+                            <iframe width="420" height="315" src="https://www.youtube.com/embed/DK_0jXPuIr0" allowfullscreen style="border:0"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__info" data-equalizer-watch="row">
+                    <div class="inner">
+                        <div class="celebrity clearfix">
+                            <a href="" title="Justin Bieber" class="celebrity__avatar">
+                                <img src="images/dummy/justin_bieber.jpg" alt="">
+                            </a>
+                            <div class="celebrity_info">
+                                <a href="" title="Justin Bieber" class="celebrity__name">
+                                    Justin Bieber
+                                </a>
+                                <div class="celebrity__points">
+                                    <span class="label">
+                                        <i class="fa fa-bolt" aria-hidden="true"></i>
+                                        <strong>234.485</strong> Points
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h4 class="title">Major Lazer - Cold Water (feat. Justin Bieber &amp; MØ) (Official Lyric Video)</h4>
+                            <div class="info">
+                                <p class="short-info">
+                                    OFFICIAL LYRIC VIDEO // MAJOR LAZER - COLD WATER (FEAT. JUSTIN BIEBER &amp; MØ)...
+                                    <a href="" title="View more" class="link link--view-all" id="link-view-all">View more <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                </p>
+                                <p class="full-info">
+                                    OFFICIAL LYRIC VIDEO // MAJOR LAZER - COLD WATER (FEAT. JUSTIN BIEBER &amp; MØ) SUBSCRIBE TO THE MAJOR LAZER YOUTUBE CHANNEL TO WATCH MORE!
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="tabs__content">
-                        <ul class="tabs" data-tabs id="youtube-tabs">
-                            <li class="tabs-title is-active">
-                                <a href="#panel1" aria-selected="true" title="Share">
-                                    <i class="fa fa-share" aria-hidden="true"></i>
-                                    Share
-                                </a>
-                            </li>
-                            <li class="tabs-title">
-                                <a href="#panel2" title="Comment">
-                                    <i class="fa fa-commenting-o" aria-hidden="true"></i>
-                                    Comment
-                                </a>
-                            </li>
-                        </ul>
+                        <div class="inner">
+                            <ul class="tabs" data-tabs id="youtube-tabs">
+                                <li class="tabs-title is-active">
+                                    <a href="#panel1" aria-selected="true" title="Share">
+                                        <i class="fa fa-share" aria-hidden="true"></i>
+                                        Share
+                                    </a>
+                                </li>
+                                <li class="tabs-title">
+                                    <a href="#panel2" title="Comment">
+                                        <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                                        Comment
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                         <div class="tabs-content" data-tabs-content="youtube-tabs">
                             <div class="tabs-panel is-active" id="panel1">
-                                <div class="share">
-                                    <img src="images/dummy/share.png" alt="">
-                                </div>
-                                <div class="trending">
-                                    <span class="title">Top Trending Today</span>
-                                    <div class="trending__row media-object" data-equalizer>
-                                        <div class="media-object-section">
-                                            <div class="thumbnail" data-equalizer-watch>
-                                                <img src="images/dummy/justin_bieber--trending.jpg">
-                                            </div>
-                                        </div>
-                                        <div class="media-object-section">
-                                            <a href="" class="table" data-equalizer-watch>
-                                                <div class="table__cell">
-                                                    <p>2016 MTV EMA Winners List: Justin Bieber Earns Three Big Wins</p>
-                                                </div>
-                                            </a>
-                                        </div>
+                                <div class="inner">
+                                    <div class="share">
+                                        <img src="images/dummy/share.png" alt="">
                                     </div>
-                                    <div class="trending__row media-object" data-equalizer>
-                                        <div class="media-object-section">
-                                            <div class="thumbnail" data-equalizer-watch>
-                                                <img src="images/dummy/justin_bieber--trending.jpg">
+                                    <div class="trending">
+                                        <span class="title">Top Trending Today</span>
+                                        <div class="trending__row media-object" data-equalizer>
+                                            <div class="media-object-section">
+                                                <div class="thumbnail" data-equalizer-watch>
+                                                    <img src="images/dummy/justin_bieber--trending.jpg">
+                                                </div>
+                                            </div>
+                                            <div class="media-object-section">
+                                                <a href="" class="table" data-equalizer-watch>
+                                                    <div class="table__cell">
+                                                        <p>2016 MTV EMA Winners List: Justin Bieber Earns Three Big Wins</p>
+                                                    </div>
+                                                </a>
                                             </div>
                                         </div>
-                                        <div class="media-object-section">
-                                            <a href="" class="table" data-equalizer-watch>
-                                                <div class="table__cell">
-                                                    <p>2016 MTV EMA Winners List: Justin Bieber Earns Three Big Wins</p>
+                                        <div class="trending__row media-object" data-equalizer>
+                                            <div class="media-object-section">
+                                                <div class="thumbnail" data-equalizer-watch>
+                                                    <img src="images/dummy/justin_bieber--trending.jpg">
                                                 </div>
-                                            </a>
+                                            </div>
+                                            <div class="media-object-section">
+                                                <a href="" class="table" data-equalizer-watch>
+                                                    <div class="table__cell">
+                                                        <p>2016 MTV EMA Winners List: Justin Bieber Earns Three Big Wins</p>
+                                                    </div>
+                                                </a>
+                                            </div>
                                         </div>
+                                        <div class="trending__row media-object" data-equalizer>
+                                            <div class="media-object-section">
+                                                <div class="thumbnail" data-equalizer-watch>
+                                                    <img src="images/dummy/justin_bieber--trending.jpg">
+                                                </div>
+                                            </div>
+                                            <div class="media-object-section">
+                                                <a href="" class="table" data-equalizer-watch>
+                                                    <div class="table__cell">
+                                                        <p>2016 MTV EMA Winners List: Justin Bieber Earns Three Big Wins</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="trending__row media-object" data-equalizer>
+                                            <div class="media-object-section">
+                                                <div class="thumbnail" data-equalizer-watch>
+                                                    <img src="images/dummy/justin_bieber--trending.jpg">
+                                                </div>
+                                            </div>
+                                            <div class="media-object-section">
+                                                <a href="" class="table" data-equalizer-watch>
+                                                    <div class="table__cell">
+                                                        <p>2016 MTV EMA Winners List: Justin Bieber Earns Three Big Wins</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div> -->
+                                        <!-- <div class="related"></div> -->
                                     </div>
-                                    <div class="trending__row media-object" data-equalizer>
-                                        <div class="media-object-section">
-                                            <div class="thumbnail" data-equalizer-watch>
-                                                <img src="images/dummy/justin_bieber--trending.jpg">
-                                            </div>
-                                        </div>
-                                        <div class="media-object-section">
-                                            <a href="" class="table" data-equalizer-watch>
-                                                <div class="table__cell">
-                                                    <p>2016 MTV EMA Winners List: Justin Bieber Earns Three Big Wins</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <!-- <div class="trending__row media-object" data-equalizer>
-                                        <div class="media-object-section">
-                                            <div class="thumbnail" data-equalizer-watch>
-                                                <img src="images/dummy/justin_bieber--trending.jpg">
-                                            </div>
-                                        </div>
-                                        <div class="media-object-section">
-                                            <a href="" class="table" data-equalizer-watch>
-                                                <div class="table__cell">
-                                                    <p>2016 MTV EMA Winners List: Justin Bieber Earns Three Big Wins</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div> -->
-                                    <!-- <div class="related"></div> -->
                                 </div>
                             </div>
                             <div class="tabs-panel" id="panel2">

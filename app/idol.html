@@ -15,7 +15,7 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
@@ -30,7 +30,7 @@
     <!-- endbuild -->
 </head>
 
-<body>
+<body style="background-image: url(https://vcdn01.vietstar.net/source/bg/002.jpg); background-attachment: fixed; background-size: cover;">
     <!-- /* Header */ -->
     <include src="partials/header.html"></include>
 
@@ -52,14 +52,18 @@
                         <div class="celebrity__avatar">
                             <img src="images/dummy/justin_bieber.jpg" alt="">
                         </div>
-                        <a href="" class="idol__name" title="Justin Bieber">Justin Bieber</a>
+                        <a href="" class="idol__name" title="Justin Bieber">
+                            <h1>
+                                Justin Bieber
+                            </h1>
+                        </a>
                         <div class="social">
                             <div class="social__name facebook">
-                                <span class="points">134.485</span>
+                                <span class="points counter">134,485</span>
                                 <span class="title"><i class="fa fa-facebook-official" aria-hidden="true"></i>Facebook Views</span>
                             </div>
                             <div class="social__name youtube">
-                                <span class="points">23.934.485</span>
+                                <span class="points counter">23,934,485</span>
                                 <span class="title"><i class="fa fa-youtube" aria-hidden="true"></i>Youtube Views</span>
                             </div>
                         </div>
@@ -70,7 +74,7 @@
                 <div class="small-12 medium-8 columns">
                     <div class="idol__content">
                         <div class="tabs">
-                            <ul>
+                            <!-- <ul>
                                 <li class="active">
                                     <a href="" title="All">All</a>
                                 </li>
@@ -83,69 +87,416 @@
                                 <li>
                                     <a href="" title="Photos">Photos</a>
                                 </li>
+                            </ul> -->
+
+                            <ul class="tabs" data-tabs id="idol-tabs">
+                                <li class="tabs-title is-active">
+                                    <a href="#panel-all" aria-selected="true" title="All">All</a>
+                                </li>
+                                <li class="tabs-title">
+                                    <a href="#panel-videos" title="Videos">Videos</a>
+                                </li>
+                                <li class="tabs-title">
+                                    <a href="#panel-news" title="News">News</a>
+                                </li>
+                                <li class="tabs-title">
+                                    <a href="#panel-photos" title="Photos">Photos</a>
+                                </li>
                             </ul>
                         </div>
-                        <div class="row">
-                            <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
-                                <div class="media__img">
-                                    <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                        <div class="tabs-content" data-tabs-content="idol-tabs">
+                            <div class="tabs-panel is-active" id="panel-all">
+                                <div class="row">
+                                    <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                        <div class="media__img">
+                                            <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                        </div>
+                                        <div class="media__title">
+                                            <h2>
+                                                Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months... all
+                                            </h2>
+                                        </div>
+                                    </a>
+                                    <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                        <div class="media__img">
+                                            <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                        </div>
+                                        <div class="media__title">
+                                            <h2>
+                                                Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...
+                                            </h2>
+                                        </div>
+                                    </a>
+                                    <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                        <div class="media__img">
+                                            <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                        </div>
+                                        <div class="media__title">
+                                            <h2>
+                                                Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...
+                                            </h2>
+                                        </div>
+                                    </a>
+                                    <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                        <div class="media__img">
+                                            <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                        </div>
+                                        <div class="media__title">
+                                            <h2>
+                                                Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...
+                                            </h2>
+                                        </div>
+                                    </a>
+                                    <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                        <div class="media__img">
+                                            <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                        </div>
+                                        <div class="media__title">
+                                            <h2>
+                                                Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...
+                                            </h2>
+                                        </div>
+                                    </a>
+                                    <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                        <div class="media__img">
+                                            <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                        </div>
+                                        <div class="media__title">
+                                            <h2>
+                                                Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...
+                                            </h2>
+                                        </div>
+                                    </a>
+                                    <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                        <div class="media__img">
+                                            <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                        </div>
+                                        <div class="media__title">
+                                            <h2>
+                                                Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...
+                                            </h2>
+                                        </div>
+                                    </a>
+                                    <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                        <div class="media__img">
+                                            <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                        </div>
+                                        <div class="media__title">
+                                            <h2>
+                                                Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...
+                                            </h2>
+                                        </div>
+                                    </a>
+                                    <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                        <div class="media__img">
+                                            <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                        </div>
+                                        <div class="media__title">
+                                            <h2>
+                                                Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...
+                                            </h2>
+                                        </div>
+                                    </a>
                                 </div>
-                                <div class="media__title">Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...</div>
-                            </a>
-                            <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
-                                <div class="media__img">
-                                    <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                <div class="button__wrapper">
+                                    <a href="" title="View More" class="button">View More</a>
                                 </div>
-                                <div class="media__title">Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...</div>
-                            </a>
-                            <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
-                                <div class="media__img">
-                                    <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                            </div>
+                            <div class="tabs-panel" id="panel-videos">
+                                <div class="row">
+                                    <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                        <div class="media__img">
+                                            <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                        </div>
+                                        <div class="media__title">
+                                            <h2>
+                                                Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months... videos
+                                            </h2>
+                                        </div>
+                                    </a>
+                                    <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                        <div class="media__img">
+                                            <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                        </div>
+                                        <div class="media__title">
+                                            <h2>
+                                                Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...
+                                            </h2>
+                                        </div>
+                                    </a>
+                                    <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                        <div class="media__img">
+                                            <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                        </div>
+                                        <div class="media__title">
+                                            <h2>
+                                                Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...
+                                            </h2>
+                                        </div>
+                                    </a>
+                                    <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                        <div class="media__img">
+                                            <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                        </div>
+                                        <div class="media__title">
+                                            <h2>
+                                                Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...
+                                            </h2>
+                                        </div>
+                                    </a>
+                                    <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                        <div class="media__img">
+                                            <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                        </div>
+                                        <div class="media__title">
+                                            <h2>
+                                                Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...
+                                            </h2>
+                                        </div>
+                                    </a>
+                                    <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                        <div class="media__img">
+                                            <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                        </div>
+                                        <div class="media__title">
+                                            <h2>
+                                                Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...
+                                            </h2>
+                                        </div>
+                                    </a>
+                                    <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                        <div class="media__img">
+                                            <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                        </div>
+                                        <div class="media__title">
+                                            <h2>
+                                                Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...
+                                            </h2>
+                                        </div>
+                                    </a>
+                                    <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                        <div class="media__img">
+                                            <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                        </div>
+                                        <div class="media__title">
+                                            <h2>
+                                                Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...
+                                            </h2>
+                                        </div>
+                                    </a>
+                                    <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                        <div class="media__img">
+                                            <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                        </div>
+                                        <div class="media__title">
+                                            <h2>
+                                                Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...
+                                            </h2>
+                                        </div>
+                                    </a>
                                 </div>
-                                <div class="media__title">Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...</div>
-                            </a>
-                            <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
-                                <div class="media__img">
-                                    <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                <div class="button__wrapper">
+                                    <a href="" title="View More" class="button">View More</a>
                                 </div>
-                                <div class="media__title">Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...</div>
-                            </a>
-                            <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
-                                <div class="media__img">
-                                    <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                            </div>
+                            <div class="tabs-panel" id="panel-news">
+                                <div class="row">
+                                    <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                        <div class="media__img">
+                                            <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                        </div>
+                                        <div class="media__title">
+                                            <h2>
+                                                Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months... news
+                                            </h2>
+                                        </div>
+                                    </a>
+                                    <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                        <div class="media__img">
+                                            <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                        </div>
+                                        <div class="media__title">
+                                            <h2>
+                                                Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...
+                                            </h2>
+                                        </div>
+                                    </a>
+                                    <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                        <div class="media__img">
+                                            <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                        </div>
+                                        <div class="media__title">
+                                            <h2>
+                                                Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...
+                                            </h2>
+                                        </div>
+                                    </a>
+                                    <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                        <div class="media__img">
+                                            <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                        </div>
+                                        <div class="media__title">
+                                            <h2>
+                                                Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...
+                                            </h2>
+                                        </div>
+                                    </a>
+                                    <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                        <div class="media__img">
+                                            <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                        </div>
+                                        <div class="media__title">
+                                            <h2>
+                                                Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...
+                                            </h2>
+                                        </div>
+                                    </a>
+                                    <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                        <div class="media__img">
+                                            <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                        </div>
+                                        <div class="media__title">
+                                            <h2>
+                                                Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...
+                                            </h2>
+                                        </div>
+                                    </a>
+                                    <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                        <div class="media__img">
+                                            <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                        </div>
+                                        <div class="media__title">
+                                            <h2>
+                                                Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...
+                                            </h2>
+                                        </div>
+                                    </a>
+                                    <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                        <div class="media__img">
+                                            <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                        </div>
+                                        <div class="media__title">
+                                            <h2>
+                                                Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...
+                                            </h2>
+                                        </div>
+                                    </a>
+                                    <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                        <div class="media__img">
+                                            <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                        </div>
+                                        <div class="media__title">
+                                            <h2>
+                                                Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...
+                                            </h2>
+                                        </div>
+                                    </a>
                                 </div>
-                                <div class="media__title">Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...</div>
-                            </a>
-                            <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
-                                <div class="media__img">
-                                    <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                <div class="button__wrapper">
+                                    <a href="" title="View More" class="button">View More</a>
                                 </div>
-                                <div class="media__title">Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...</div>
-                            </a>
-                            <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
-                                <div class="media__img">
-                                    <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                            </div>
+                            <div class="tabs-panel" id="panel-photos">
+                                <div class="row">
+                                    <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                        <div class="media__img">
+                                            <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                        </div>
+                                        <div class="media__title">
+                                            <h2>
+                                                Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months... photos
+                                            </h2>
+                                        </div>
+                                    </a>
+                                    <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                        <div class="media__img">
+                                            <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                        </div>
+                                        <div class="media__title">
+                                            <h2>
+                                                Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...
+                                            </h2>
+                                        </div>
+                                    </a>
+                                    <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                        <div class="media__img">
+                                            <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                        </div>
+                                        <div class="media__title">
+                                            <h2>
+                                                Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...
+                                            </h2>
+                                        </div>
+                                    </a>
+                                    <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                        <div class="media__img">
+                                            <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                        </div>
+                                        <div class="media__title">
+                                            <h2>
+                                                Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...
+                                            </h2>
+                                        </div>
+                                    </a>
+                                    <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                        <div class="media__img">
+                                            <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                        </div>
+                                        <div class="media__title">
+                                            <h2>
+                                                Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...
+                                            </h2>
+                                        </div>
+                                    </a>
+                                    <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                        <div class="media__img">
+                                            <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                        </div>
+                                        <div class="media__title">
+                                            <h2>
+                                                Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...
+                                            </h2>
+                                        </div>
+                                    </a>
+                                    <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                        <div class="media__img">
+                                            <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                        </div>
+                                        <div class="media__title">
+                                            <h2>
+                                                Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...
+                                            </h2>
+                                        </div>
+                                    </a>
+                                    <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                        <div class="media__img">
+                                            <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                        </div>
+                                        <div class="media__title">
+                                            <h2>
+                                                Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...
+                                            </h2>
+                                        </div>
+                                    </a>
+                                    <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
+                                        <div class="media__img">
+                                            <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                        </div>
+                                        <div class="media__title">
+                                            <h2>
+                                                Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...
+                                            </h2>
+                                        </div>
+                                    </a>
                                 </div>
-                                <div class="media__title">Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...</div>
-                            </a>
-                            <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
-                                <div class="media__img">
-                                    <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
+                                <div class="button__wrapper">
+                                    <a href="" title="View More" class="button">View More</a>
                                 </div>
-                                <div class="media__title">Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...</div>
-                            </a>
-                            <a href="" title="Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months..." class="media">
-                                <div class="media__img">
-                                    <img class="thumbnail" src="images/dummy/justin_bieber--event.jpg" alt="Photo of Uranus.">
-                                </div>
-                                <div class="media__title">Justin Bieber's ex-girlfriend Jayde Pierce reveals she's six months...</div>
-                            </a>
-                        </div>
-                        <div class="button__wrapper">
-                            <a href="" title="View More" class="button">View More</a>
+                            </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="small-12 medium-4 columns">
                     <div class="idol__content idol__content--events">
                         <h3 class="title">Events</h3>
@@ -159,7 +510,7 @@
                                 <div class="media-object-section">
                                     <a href="" class="table" data-equalizer-watch>
                                         <div class="table__cell">
-                                            <p>2016 MTV EMA Winners List: Justin Bieber Earns Three Big Wins</p>
+                                            <h3>2016 MTV EMA Winners List: Justin Bieber Earns Three Big Wins</h3>
                                         </div>
                                     </a>
                                 </div>
@@ -173,7 +524,7 @@
                                 <div class="media-object-section">
                                     <a href="" class="table" data-equalizer-watch>
                                         <div class="table__cell">
-                                            <p>2016 MTV EMA Winners List: Justin Bieber Earns Three Big Wins</p>
+                                            <h3>2016 MTV EMA Winners List: Justin Bieber Earns Three Big Wins</h3>
                                         </div>
                                     </a>
                                 </div>
@@ -187,7 +538,7 @@
                                 <div class="media-object-section">
                                     <a href="" class="table" data-equalizer-watch>
                                         <div class="table__cell">
-                                            <p>2016 MTV EMA Winners List: Justin Bieber Earns Three Big Wins</p>
+                                            <h3>2016 MTV EMA Winners List: Justin Bieber Earns Three Big Wins</h3>
                                         </div>
                                     </a>
                                 </div>
@@ -201,7 +552,7 @@
                                 <div class="media-object-section">
                                     <a href="" class="table" data-equalizer-watch>
                                         <div class="table__cell">
-                                            <p>2016 MTV EMA Winners List: Justin Bieber Earns Three Big Wins</p>
+                                            <h3>2016 MTV EMA Winners List: Justin Bieber Earns Three Big Wins</h3>
                                         </div>
                                     </a>
                                 </div>
@@ -215,7 +566,7 @@
                                 <div class="media-object-section">
                                     <a href="" class="table" data-equalizer-watch>
                                         <div class="table__cell">
-                                            <p>2016 MTV EMA Winners List: Justin Bieber Earns Three Big Wins</p>
+                                            <h3>2016 MTV EMA Winners List: Justin Bieber Earns Three Big Wins</h3>
                                         </div>
                                     </a>
                                 </div>
@@ -233,22 +584,29 @@
     <!-- /* Footer */ -->
     <include src="partials/footer.html"></include>
 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/magnific-popup/dist/jquery.magnific-popup.js"></script>
     <script src="/bower_components/EasyAutocomplete/dist/jquery.easy-autocomplete.min.js"></script>
     <script src="/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
+    <script src="/bower_components/waypoints/lib/jquery.waypoints.js"></script>
     <!-- endbower -->
+    <script src="scripts/headroom.js"></script>
+    <script src="scripts/jquery.counterup.js"></script>
     <script src="scripts/foundation.min.js"></script>
     <!-- endbuild -->
+
     <script>
     $(document).ready(function() {
         $(document).foundation();
     });
     </script>
+
     <!-- build:js scripts/plugins.js -->
     <!-- endbuild -->
+
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->

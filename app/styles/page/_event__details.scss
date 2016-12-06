@@ -1,13 +1,29 @@
 .page--event__details {
-	background-color: #1b1b1b;
+	#banner {
+		min-height: 550px;
+		position: relative;
+
+		.diagonalLineBot {
+			width: 100%;
+			@include ab( n, 0, 0, n );
+
+			img {
+				width: 100%;
+			}
+		}
+	}
 
 	/** Event Details **/
 	.event__details {
 		padding: 40px 0;
+		background-color: #1b1b1b;
 		@include screen ( medium ) {
-			padding: 75px 0;
+			padding: 0;
 		}
 
+		>.row {
+			@include transform ( translateY(-500px) );
+		}
 		.button__wrapper {
 			margin-top: 20px;
 			@include screen ( medium ) {
@@ -101,6 +117,10 @@
 			@include screen ( medium ) {
 				padding-bottom: 0;
 			}
+
+			span {
+				display: inline-block;
+			}
 		}
 		.social__name {
 			padding: 0 10px;
@@ -112,8 +132,11 @@
 
 			span {
 				color: #fff;
-				display: block;
 				line-height: normal;
+				display: inline-block;
+			}
+			.counter {
+				margin-right: 5px;
 			}
 			.points {
 				font-size: 12px;
@@ -158,10 +181,16 @@
 		}
 		/* .media {} */
 		.media__title {
-			color: #fff;
-			font-size: 13px;
-			font-weight: bold;
-			line-height: normal;
+			h4 {
+				color: #fff;
+				font-size: 13px;
+				font-weight: bold;
+				line-height: normal;
+				overflow: hidden;
+				display: -webkit-box;
+				-webkit-line-clamp: 3;
+				-webkit-box-orient: vertical;
+			}
 		}
 		.social--views {
 			color: #999999;

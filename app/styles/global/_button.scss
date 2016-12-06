@@ -30,6 +30,7 @@
     color: #fff;
     border: none;
     position: relative;
+    padding: 10px 30px;
     background-color: #89b33d;
     @include transition ( all .2s ease-in-out );
     &:hover {
@@ -63,4 +64,7 @@
 }
 .button__wrapper--right {
     text-align: right;
+}
+.button__wrapper--left {
+    text-align: left;
 }

@@ -61,11 +61,16 @@ footer {
 				@include ab ( 50%, 50%, n, n );
 				@include transform ( translate(-50%, -50%) );
 			}
+
+			img {
+				max-width: 150px;
+			}
 		}
-		.search {
+		.search, .create {
 			width: 50%;
 			float: right;
 			text-align: left;
+			position: relative;
 			display: inline-block;
 			vertical-align: middle;
 			@include screen ( medium ) {
@@ -90,6 +95,61 @@ footer {
 					margin-left: 20px;
 				}
 			}
+			.dropdown {
+		        li {
+		            &.is-active {
+		                .register {
+		                    color: #fff;
+		                    background-color: #8cb73e;
+		                    &:before {
+		                        color: #fff;
+		                    }
+		                }
+		            }
+		            .menu {
+		                width: 100%;
+		                margin-top: 5px;
+		                border: 0;
+		                overflow: hidden;
+		                min-width: 0!important;
+		                @include border-radius( 5px, 5px, 5px, 5px);
+		                li {
+		                    a {
+		                        color: #333333;
+		                        font-size: 14px;
+		                        padding: 10px 15px;
+		                        background-color: #fff;
+		                        &:hover {
+		                            color: #fff;
+		                            background-color: #8cb73e;
+		                        }
+		                    }
+		                }
+		            }
+		        }
+		        .register {
+		            color: #fff;
+		            font-size: 14px;
+		            padding: 10px 40px 10px 30px!important;
+		            position: relative;
+		            background-color: #8db647;
+		            @include transition ( all .2s ease-in-out);
+		            @include border-radius( 5px, 5px, 5px, 5px);
+		            &:hover {
+		                background-color: #759d32;
+		            }
+		            &:before {
+		                content: '\f107';
+		                font-family: 'FontAwesome';
+		                color: #fff;
+		                @include ab ( 50%, n, n, 10px);
+		                @include transform ( translateY(-50%));
+		            }
+		            &:after {
+		                display: none!important;
+		            }
+		        }
+		    }
 		}
 	}
 	.footer--bottom {

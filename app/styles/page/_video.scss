@@ -8,12 +8,12 @@
 		}
 
 		.link--video-page {
-			color: #333333;
-			font-size: 14px;
 			@include screen ( medium ) {
 				@include ab ( -30px, n, n, 15px );
 				&:hover {
-					color: #8db647;
+					h4 {
+						color: #8db647;
+					}
 
 					.fa {
 						left: 5px;
@@ -21,6 +21,10 @@
 				}
 			}
 
+			h4 {
+				color: #333333;
+				font-size: 14px;
+			}
 			.fa {
 				left: 0;
 				position: relative;
@@ -77,17 +81,25 @@
 				}
 			}
 		}
+		.media__title {
+			h3 {
+				overflow: hidden;
+				display: -webkit-box;
+				-webkit-line-clamp: 3;
+				-webkit-box-orient: vertical;
+			}
+		}
 	}
 	.video--all {
 		.video__row {
 			padding: 10px 0;
-			margin-top: 40px;
+			margin-top: 55px;
 			position: relative;
 			background-color: #fff;
 			@include box-shadow( 0px, 0px, 10px, rgba(0, 0, 0, 0.08) );
 			@include screen ( medium ) {
 				padding: 20px 0;
-				margin-top: 60px;
+				margin-top: 75px;
 			}
 		}
 		.video__info {
@@ -97,23 +109,24 @@
 				text-align: center;
 				position: relative;
 
-				img, h3 {
+				img, h2 {
 					vertical-align: top;
 					display: inline-block;
 					@include screen ( medium ) {
 						vertical-align: middle;
 					}
 				}
-				h3 {
+				h2 {
 					color: #666666;
 					font-size: 18px;
+					line-height: normal;
 					text-align: left;
 					margin: 0;
 					padding-left: 57px;
 					@include ab ( -35px, 0, n, n );
 					@include screen ( medium ) {
 						max-width: 90%;
-						font-size: 24px;
+						font-size: 22px;
 						top: auto;
 						left: auto;
 						position: relative;
@@ -136,7 +149,7 @@
 				}
 			}
 			.heading--usa {
-				h3 {
+				h2 {
 					&:before {
 						content: '';
 						width: 47px;
@@ -146,7 +159,7 @@
 				}
 			}
 			.heading--latest {
-				h3 {
+				h2 {
 					&:before {
 						content: '';
 						width: 47px;
@@ -156,7 +169,7 @@
 				}
 			}
 			.heading--live-tour {
-				h3 {
+				h2 {
 					&:before {
 						content: '';
 						width: 47px;
@@ -166,7 +179,7 @@
 				}
 			}
 			.heading--training-dance {
-				h3 {
+				h2 {
 					&:before {
 						content: '';
 						width: 47px;
@@ -176,7 +189,7 @@
 				}
 			}
 			.heading--fans-cover {
-				h3 {
+				h2 {
 					&:before {
 						content: '';
 						width: 47px;
@@ -186,7 +199,7 @@
 				}
 			}
 			.heading--official-mv {
-				h3 {
+				h2 {
 					&:before {
 						content: '';
 						width: 47px;
@@ -326,7 +339,7 @@
 					margin-top: 0;
 				}
 
-				p {
+				h4 {
 					margin: 0;
 					color: #2070ae;
 					font-size: 13px;
