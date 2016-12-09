@@ -35,7 +35,7 @@ var yahStar = window.yahStar || {}; //global namespace for YOUR yahStar, Please 
             this.initShowMenuMobile();
             this.initShowSearchMobile();
 
-            if ( $('#banner').length ) {
+            if ($('#banner').length) {
                 yahStar.Global.initParallax();
             }
 
@@ -82,9 +82,20 @@ var yahStar = window.yahStar || {}; //global namespace for YOUR yahStar, Please 
                 $('.full-info').slideToggle('normal');
             });
 
-            // simple as this!
-            // NOTE: init() is implicitly called with the plugin
-            $("#header").headroom();
+            //Menu bar pinned when scroll up
+            (function() {
+                var header = document.querySelector("#header");
+
+                if (window.location.hash) {
+                    header.classList.add("headroom--unpinned");
+                }
+
+                var headroom = new Headroom(header, {
+                    tolerance: 10,
+                    offset: 140
+                });
+                headroom.init();
+            }());
         },
 
         initFormElements: function() {
@@ -274,6 +285,9 @@ var yahStar = window.yahStar || {}; //global namespace for YOUR yahStar, Please 
                     beforeOpen: function() {
                         this.st.mainClass = 'mfp-zoom-out';
                     },
+                    close: function () {
+                        window.location.href = $('#modal--youtube-static').find('.close').attr('href');
+                    },
                     open: function() {
                         new Foundation.Equalizer($('.trending__row')).applyHeight();
                         new Foundation.Equalizer($('#modal__row-youtube')).applyHeight();
@@ -310,7 +324,7 @@ var yahStar = window.yahStar || {}; //global namespace for YOUR yahStar, Please 
                 hTop = 60;
 
             $('#banner')
-                .css('backgroundPosition', '50% ' + (Math.round((($('#banner').offset().top - scrollPos)-hTop) * speed)) + 'px');
+                .css('backgroundPosition', '50% ' + (Math.round((($('#banner').offset().top - scrollPos) - hTop) * speed)) + 'px');
         }
     };
 })(jQuery);

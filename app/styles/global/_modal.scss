@@ -448,6 +448,12 @@
             }
         }
     }
+    .close {
+        @include ab ( -30px, n, n, 0 );
+        @include screen ( big ) {
+            @include ab ( -5%, n, n, -25px );
+        }
+    }
 }
 
 /*
