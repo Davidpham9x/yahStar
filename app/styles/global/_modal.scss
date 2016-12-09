@@ -161,7 +161,7 @@
             width: 100%;
             background-color: #000;
             @include screen ( medium ) {
-                width: 60%;
+                width: 64%;
                 float: left;
             }
 
@@ -176,6 +176,9 @@
             background-color: #fff;
             @include screen ( medium ) {
                 width: 40%;
+                max-width: 390px;
+                max-height: 590px;
+                overflow-y: auto;
                 float: left;
             }
 
@@ -284,6 +287,8 @@
                     }
 
                     .tabs-title {
+                        border: 1px solid transparent;
+                        border-bottom: 0;
                         &:hover, &.is-active {
                             border: 1px solid #e5e5e5;
                             border-bottom: 0;
@@ -375,8 +380,8 @@
                         padding-bottom: 55px;
 
                         .comment__content {
-                            overflow-y: auto;
-                            max-height: 225px;
+                            /* overflow-y: auto;
+                            max-height: 225px; */
                         }
                         .comment__avatar {
                             float: left;
