@@ -161,8 +161,11 @@
             width: 100%;
             background-color: #000;
             @include screen ( medium ) {
-                width: 64%;
+                width: 60%;
                 float: left;
+            }
+            @include screen ( large ) {
+                width: 64%;
             }
 
             .flex-video {
@@ -176,10 +179,12 @@
             background-color: #fff;
             @include screen ( medium ) {
                 width: 40%;
-                max-width: 390px;
                 max-height: 590px;
                 overflow-y: auto;
                 float: left;
+            }
+            @include screen ( large ) {
+                max-width: 390px;
             }
 
             .inner {
@@ -232,9 +237,7 @@
                     line-height: normal;
                 }
                 .info {
-                    height: 50px;
                     margin-top: 10px;
-                    overflow-y: auto;
 
                     p {
                         margin-bottom: 0;
